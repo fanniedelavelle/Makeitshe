@@ -1,3 +1,6 @@
 .replacement {
 color:red;
 }
+.replacement:hover { 
+    background-color: yellow;
+}
