@@ -7,6 +7,9 @@
 
   As of September 21st, 2017 only the word "he", is being replaced.
 
+  ## Extension works only on new websites
+  The websites must be manually added to manifest.json
+
   ## TODO ##
 	1. Find an optimal way to replace instances of these words by the female instances.
 
