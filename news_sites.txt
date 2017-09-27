@@ -432,3 +432,4 @@
 *://www.marketwatch.com/*
 *://europe.wsj.com/*
 *://finance.yahoo.com/*
+*://*.theverge.com/*
