@@ -10,6 +10,7 @@ function replaceAll(str,mapObj,names_regex){
     var mod = false;
     new_string = str.replace(names_regex, function(matched){
         console.log('matched');
+        console.log(matched);
         mod = true;
         var replace_by = mapObj[matched.trim()];
         return '<span class="replacement"> '+mapObj[matched.trim()]+ ' </span>';
