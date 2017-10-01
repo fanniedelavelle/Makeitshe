@@ -1,11 +1,14 @@
 // Male words
 var m_words = ["he", "He", "his", "His", "father", "Father", "Brother", "brother", "Uncle", "Aunt","Male", "male","Mr", "Mister", "Sir", "actor", "Actor", "boy", "Boy", "congressman", "Congressman"];
 // Female words
+
 var f_words = ["she", "She", "her", "Her", "mother","Mother","Sister", "brother","Aunt", "aunt", "Female", "female","Ms.", "Madam", "Madam", "Actress", "Actress", "girl", "Girl", "Congresswoman", "Congresswoman"];
+
 
 
 //get all elements from the html
 var elements = document.getElementsByTagName('*');
+
 // loop through the html tags
 for (var i = 0; i < elements.length; i++) {
   var element = elements[i];
@@ -39,4 +42,6 @@ for (var i = 0; i < elements.length; i++) {
     }
   }
 }
+
+
 console.log("Done replacing");
