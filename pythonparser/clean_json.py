@@ -26,5 +26,5 @@ with open(initial_json_file_path, 'r', encoding='utf8') as data_file:
             except:
                pass
 
-with io.open('./json/name_associative_dictionnary_filtered.json', 'w', encoding='utf8') as jsonfile:
+with io.open('./json/name_associative_dictionnary_filtered.js', 'w', encoding='utf8') as jsonfile:
     json.dump(final_dict, jsonfile, ensure_ascii=False)
