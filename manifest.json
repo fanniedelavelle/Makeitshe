@@ -6,7 +6,7 @@
     "content_scripts": [
         {
             "matches":["*://*/*"],
-            "js": ["content.js", "data/name_associative_dictionnary_filtered.js", "nameswap.js"],
+            "js": ["content.js"],
             "css":["style.css"],
             "run_at": "document_end"
         }
