@@ -1,8 +1,7 @@
 {
 "manifest_version": 2,
     "name": "[sheChromeExtension]",
-    "description": "[This extension aims to replace certain male words with their female counterparts.
-]",
+    "description": "[This extension aims to replace certain male words with their female counterparts.]",
     "version": "1.0",
     "content_scripts": [
         {
