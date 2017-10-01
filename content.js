@@ -1,7 +1,7 @@
 // Male words
-var m_words = ["he", "He", "his", "His", "father", "Father", "Brother", "brother", "Uncle", "Aunt","Male", "male","Mr", "Mister", "Sir", "actor", "Actor"];
+var m_words = ["he", "He", "his", "His", "father", "Father", "Brother", "brother", "Uncle", "Aunt","Male", "male","Mr", "Mister", "Sir", "actor", "Actor", "boy", "Boy", "congressman", "Congressman"];
 // Female words
-var f_words = ["she", "She", "her", "Her", "mother","Mother","Sister", "brother","Aunt", "aunt", "Female", "female","Ms.", "Madam", "Madam", "Actress", "Actress"];
+var f_words = ["she", "She", "her", "Her", "mother","Mother","Sister", "brother","Aunt", "aunt", "Female", "female","Ms.", "Madam", "Madam", "Actress", "Actress", "girl", "Girl", "Congresswoman", "Congresswoman"];
 
 
 //get all elements from the html
@@ -31,7 +31,7 @@ for (var i = 0; i < elements.length; i++) {
           if(element!=null){
             // Replace HTML in order to create a new "span" for each replacement
             // Replace the respective f_word
-            s_replace = '<span class="replacement">' + f_words[k] + '</span>';
+            s_replace = '<span class="replacement tooltip">' + f_words[k] + '</span>';
             element.innerHTML = element.innerHTML.replace(s, s_replace);
           }
         }
