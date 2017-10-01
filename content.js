@@ -1,7 +1,7 @@
 // Male words
-var m_words = ["he", "He", "his", "His"];
+var m_words = ["he", "He", "his", "His", "father", "Father", "Brother", "brother", "Uncle", "Aunt","Male", "male","Mr", "Mister", "Sir", "actor", "Actor"];
 // Female words
-var f_words = ["she", "She", "her", "Her"];
+var f_words = ["she", "She", "her", "Her", "mother","Mother","Sister", "brother","Aunt", "aunt", "Female", "female","Ms.", "Madam", "Madam", "Actress", "Actress"];
 
 
 //get all elements from the html
