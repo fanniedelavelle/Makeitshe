@@ -5,21 +5,35 @@
  value "popup.html".
  -->
 <html>
-  <head>
-    <title>[sheChromeExtension]</title>
-    <style type="text/css">
-      body {
-        margin: 10px;
-        white-space: nowrap;
-      }
 
-      h1 {
-        font-size: 15px;
-      }
-    </style>
-  </head>
+<head>
+  <title>[sheChromeExtension]</title>
+  <style type="text/css">
+    body {
+      margin: 10px;
+      white-space: nowrap;
+    }
 
-  <body>
-    <h1><span id="malep">60</span>% male presence vs <span id="malep">40</span>% female presence</h1>
-  </body>
+    h1 {
+      font-size: 15px;
+      text-align: center;
+    }
+
+    #share {
+      display: flex;
+      justify-content: center;
+    }
+
+    button {}
+  </style>
+</head>
+
+<body>
+  <h1><span id="malep"></span>% male presence <p>vs<p> <span id="femalep"></span>% female presence</h1>
+  <div id="share">
+    <button type="button">Tweet this</button>
+  </div>
+</body>
+<script type='text/javascript' src='popup.js'></script>
+
 </html>
