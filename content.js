@@ -54,7 +54,6 @@ var swapMale = function() {
       // if the element is text get its value and replace the text with something else.
       if (node.nodeType === 3) {
         var text = node.nodeValue;
-
         // Search for the male words to be replaced
         for (m_word in words) {
           var f_word = words[m_word];
@@ -66,8 +65,16 @@ var swapMale = function() {
             if (element != null) {
               // Replace HTML in order to create a new "span" for each replacement
               // Replace the respective f_word
-              s_replace = '<span class="replacement tooltip">' + f_word + '</span>';
-              element.innerHTML = element.innerHTML.replace(s, s_replace);
+              if (element.nodeName == "TITLE") {
+                console.log("element title");
+                // If male word is in title, don't format it
+                s_replace = f_word;
+                document.title = document.title.replace(s, s_replace);
+              } else {
+                // format and replace
+                s_replace = '<span class="replacement tooltip">' + f_word + '</span>';
+                element.innerHTML = element.innerHTML.replace(s, s_replace);
+              }
               m_count++;
             }
           }
