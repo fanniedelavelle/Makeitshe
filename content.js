@@ -70,8 +70,10 @@ var swapMale = function() {
                 // If male word is in title, don't format it
                 s_replace = f_word;
                 document.title = document.title.replace(s, s_replace);
+              } else if (element.nodeName == "TEXTAREA") {
+                // If in a text area, such as a tweet, don't replace!
               } else {
-                // format and replace
+                // Any other type of text, OK to replace and format
                 s_replace = '<span class="replacement tooltip">' + f_word + '</span>';
                 element.innerHTML = element.innerHTML.replace(s, s_replace);
               }
