@@ -66,7 +66,6 @@ var swapMale = function() {
               // Replace HTML in order to create a new "span" for each replacement
               // Replace the respective f_word
               if (element.nodeName == "TITLE") {
-                console.log("element title");
                 // If male word is in title, don't format it
                 s_replace = f_word;
                 document.title = document.title.replace(s, s_replace);
