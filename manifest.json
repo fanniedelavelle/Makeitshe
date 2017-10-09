@@ -12,7 +12,7 @@
   },
   "content_scripts": [{
     "matches": ["*://*/*"],
-    "js": ["content.js"],
+    "js": ["data/words.js","content.js"],
     "css": ["style.css"],
     "run_at": "document_end"
   }]
