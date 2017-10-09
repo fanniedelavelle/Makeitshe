@@ -1,3 +1,4 @@
+
 // Male words stats variables
 var m_percent;
 var m_count = 0;
@@ -51,35 +52,31 @@ var swapMale = function() {
     for (var j = 0; j < element.childNodes.length; j++) {
       var node = element.childNodes[j];
 
-
-// MALE WORD LOOP
-// loop through the html tags
-for (var i = 0; i < elements.length; i++) {
-  var element = elements[i];
-  // loop inside the tags for child nodes
-  for (var j = 0; j < element.childNodes.length; j++) {
-    var node = element.childNodes[j];
-
-    // if the element is text get its value and replace the text with something else.
-    if (node.nodeType === 3) {
-      var text = node.nodeValue;
-
-      // Search for the male words to be replaced
-      for (var k = 0; k < m_words.length; k++) {
-        // Search for the m_word
-        var m = m_words[k];
-        var s = new RegExp("\\b" + m + "\\b");
-        // Get the position where the word is
-        var s_pos = text.search(s);
-        // If the text doesn't contain the words, skip it
-        if (s_pos != -1) {
-          if (element != null) {
-            // Replace HTML in order to create a new "span" for each replacement
-            // Replace the respective f_word
-            s_replace = '<span class="replacement">' + f_words[k] + '</span>';
-            element.innerHTML = element.innerHTML.replace(s, s_replace);
-            m_count++;
-
+      // if the element is text get its value and replace the text with something else.
+      if (node.nodeType === 3) {
+        var text = node.nodeValue;
+        // Search for the male words to be replaced
+        for (m_word in words) {
+          var f_word = words[m_word];
+          var s = new RegExp("\\b" + m_word + "\\b");
+          // Get the position where the word is
+          var s_pos = text.search(s);
+          // If the text doesn't contain the words, skip it
+          if (s_pos != -1) {
+            if (element != null) {
+              // Replace HTML in order to create a new "span" for each replacement
+              // Replace the respective f_word
+              if (element.nodeName == "TITLE") {
+                // If male word is in title, don't format it
+                s_replace = f_word;
+                document.title = document.title.replace(s, s_replace);
+              } else {
+                // format and replace
+                s_replace = '<span class="replacement tooltip">' + f_word + '</span>';
+                element.innerHTML = element.innerHTML.replace(s, s_replace);
+              }
+              m_count++;
+            }
           }
         }
       }
