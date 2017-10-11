@@ -12,7 +12,7 @@
   },
   "content_scripts": [{
     "matches": ["*://*/*"],
-    "js": ["data/words.js", "content.js", "data/name_associative_dictionnary_filtered.js", "nameswap.js"],
+    "js": ["data/words.js", "content.js", "data/associative.js", "nameswap.js"],
     "css": ["style.css"],
     "run_at": "document_end"
   }],
