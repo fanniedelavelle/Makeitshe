@@ -2,29 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3a30b3d3-a003-4c00-8f6a-a7b41ab4d83c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pythonparser/namedicts_parser.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pythonparser/test/dictUtils.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pythonparser/test/gender.dict" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pythonparser/test/regexs" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_HungaryFemaleUTF8.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_HungaryMaleUTF8.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_IndiaLastNames.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_IsraelFemaleUTF8.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_IsraelMaleUTF8.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_LatviaFemaleUTF8.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_LatviaMaleUTF8.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_NorwayLastNames.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_PolandFemaleUTF8.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_PolandMaleUTF8.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_SwedenLastNames.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_TurkeyFemaleUTF8.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_TurkeyMaleUTF8.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pythonparser/parser.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_AfghanistanFemaleUTF8.csv" afterPath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_AfghanistanFemaleUTF8.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_AfghanistanMaleUTF8.csv" afterPath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_AfghanistanMaleUTF8.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_AlbaniaFemaleUTF8.csv" afterPath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_AlbaniaFemaleUTF8.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_AlbaniaMaleUTF8.csv" afterPath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_AlbaniaMaleUTF8.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_AustraliaFemaleUTF8.csv" afterPath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_AustraliaFemaleUTF8.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_AustraliaMaleUTF8.csv" afterPath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_AustraliaMaleUTF8.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_BelgiumFemaleUTF8.csv" afterPath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_BelgiumFemaleUTF8.csv" />
@@ -32,15 +10,53 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_BrazilFemaleUTF8.csv" afterPath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_BrazilFemaleUTF8.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_BrazilMaleUTF8.csv" afterPath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_BrazilMaleUTF8.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_BrusselsFemaleUTF8.csv" afterPath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_BrusselsFemaleUTF8.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_BrusselsMaleUTF8.csv" afterPath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_BrusselsMaleUTF8.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_CanadaFemaleUTF8.csv" afterPath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_CanadaFemaleUTF8.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_CanadaMaleUTF8.csv" afterPath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_CanadaMaleUTF8.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_CzechFemaleUTF8.csv" afterPath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_CzechFemaleUTF8.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_CzechMaleUTF8.csv" afterPath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_CzechMaleUTF8.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_FinlandFemaleUTF8.csv" afterPath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_FinlandFemaleUTF8.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_FinlandMaleUTF8.csv" afterPath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_FinlandMaleUTF8.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_FlandersFemaleUTF8.csv" afterPath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_FlandersFemaleUTF8.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_FlandersMaleUTF8.csv" afterPath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_FlandersMaleUTF8.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_FranceFemaleUTF8.csv" afterPath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_FranceFemaleUTF8.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_FranceMaleUTF8.csv" afterPath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_FranceMaleUTF8.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_FrisiaFemaleUTF8.csv" afterPath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_FrisiaFemaleUTF8.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_FrisiaMaleUTF8.csv" afterPath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_FrisiaMaleUTF8.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_GermanyFemaleUTF8.csv" afterPath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_GermanyFemaleUTF8.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_GermanyMaleUTF8.csv" afterPath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_GermanyMaleUTF8.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_GreeceFemaleUTF8.csv" afterPath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_GreeceFemaleUTF8.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_GreeceMaleUTF8.csv" afterPath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_GreeceMaleUTF8.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_IndiaFemaleUTF8.csv" afterPath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_IndiaFemaleUTF8.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_IndiaMaleUTF8.csv" afterPath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_IndiaMaleUTF8.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_IranFemaleUTF8.csv" afterPath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_IranFemaleUTF8.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_IranMaleUTF8.csv" afterPath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_IranMaleUTF8.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_IrelandFemaleUTF8.csv" afterPath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_IrelandFemaleUTF8.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_IrelandMaleUTF8.csv" afterPath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_IrelandMaleUTF8.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_ItalyFemaleUTF8.csv" afterPath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_ItalyFemaleUTF8.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_ItalyMaleUTF8.csv" afterPath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_ItalyMaleUTF8.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_NorwayFemaleUTF8.csv" afterPath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_NorwayFemaleUTF8.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_NorwayMaleUTF8.csv" afterPath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_NorwayMaleUTF8.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_RomaniaFemaleUTF8.csv" afterPath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_RomaniaFemaleUTF8.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_RomaniaMaleUTF8.csv" afterPath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_RomaniaMaleUTF8.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_SloveniaFemaleUTF8.csv" afterPath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_SloveniaFemaleUTF8.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_SloveniaMaleUTF8.csv" afterPath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_SloveniaMaleUTF8.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_SomaliaFemaleUTF8.csv" afterPath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_SomaliaFemaleUTF8.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_SomaliaMaleUTF8.csv" afterPath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_SomaliaMaleUTF8.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_SpainFemaleUTF8.csv" afterPath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_SpainFemaleUTF8.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_SpainMaleUTF8.csv" afterPath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_SpainMaleUTF8.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_SwedenFemaleUTF8.csv" afterPath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_SwedenFemaleUTF8.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_SwedenMaleUTF8.csv" afterPath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_SwedenMaleUTF8.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_UKFemaleUTF8.csv" afterPath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_UKFemaleUTF8.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_UKMaleUTF8.csv" afterPath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_UKMaleUTF8.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_USAFemaleUTF8.csv" afterPath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_USAFemaleUTF8.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_USAMaleUTF8.csv" afterPath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_USAMaleUTF8.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_VietnamFemaleUTF8.csv" afterPath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_VietnamFemaleUTF8.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_VietnamMaleUTF8.csv" afterPath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_VietnamMaleUTF8.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_WalloniaFemaleUTF8.csv" afterPath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_WalloniaFemaleUTF8.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_WalloniaMaleUTF8.csv" afterPath="$PROJECT_DIR$/pythonparser/dictionnary/Latin_WalloniaMaleUTF8.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonparser/smalldict/Latin_AfghanistanFemaleUTF8.csv" afterPath="$PROJECT_DIR$/pythonparser/smalldict/Latin_AfghanistanFemaleUTF8.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonparser/smalldict/Latin_AfghanistanMaleUTF8.csv" afterPath="$PROJECT_DIR$/pythonparser/smalldict/Latin_AfghanistanMaleUTF8.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonparser/smalldict/Latin_AustraliaFemaleUTF8.csv" afterPath="$PROJECT_DIR$/pythonparser/smalldict/Latin_AustraliaFemaleUTF8.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonparser/smalldict/Latin_AustraliaMaleUTF8.csv" afterPath="$PROJECT_DIR$/pythonparser/smalldict/Latin_AustraliaMaleUTF8.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonparser/smalldict/Latin_FranceFemaleUTF8.csv" afterPath="$PROJECT_DIR$/pythonparser/smalldict/Latin_FranceFemaleUTF8.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonparser/smalldict/Latin_FranceMaleUTF8.csv" afterPath="$PROJECT_DIR$/pythonparser/smalldict/Latin_FranceMaleUTF8.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonparser/json/name_associative_dictionnary_v2.json" afterPath="$PROJECT_DIR$/pythonparser/json/name_associative_dictionnary_v2.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonparser/namedicts_parser.py" afterPath="$PROJECT_DIR$/pythonparser/namedicts_parser.py" />
     </list>
     <ignored path="sheChromeExtension.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -61,11 +77,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="namedicts_parser.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="namedicts_parser.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pythonparser/namedicts_parser.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1156">
-              <caret line="68" column="0" lean-forward="true" selection-start-line="68" selection-start-column="0" selection-end-line="69" selection-end-column="27" />
+            <state relative-caret-position="443">
+              <caret line="68" column="36" lean-forward="false" selection-start-line="68" selection-start-column="36" selection-end-line="68" selection-end-column="36" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -73,41 +89,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Latin_BelgiumMaleUTF8.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_BelgiumMaleUTF8.csv">
+      <file leaf-file-name="name_associative_dictionnary_v2.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pythonparser/json/name_associative_dictionnary_v2.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="10" lean-forward="false" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Latin_BrazilFemaleUTF8.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_BrazilFemaleUTF8.csv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="10" lean-forward="false" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Latin_BrazilMaleUTF8.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_BrazilMaleUTF8.csv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="10" lean-forward="false" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Latin_BrusselsFemaleUTF8.csv" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_BrusselsFemaleUTF8.csv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="12" lean-forward="true" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
+              <caret line="0" column="42568" lean-forward="false" selection-start-line="0" selection-start-column="42568" selection-end-line="0" selection-end-column="42568" />
               <folding />
             </state>
           </provider>
@@ -153,42 +139,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pythonparser/json/Latin_AfghanistanFemaleUTF8.json" />
-        <option value="$PROJECT_DIR$/pythonparser/json/name_associative_dictionnary.json" />
-        <option value="$PROJECT_DIR$/.gitinore" />
-        <option value="$PROJECT_DIR$/pythonparser/clean_json.py" />
-        <option value="$PROJECT_DIR$/content.js" />
-        <option value="$PROJECT_DIR$/data/name_associative_dictionnary_filtered.js" />
-        <option value="$PROJECT_DIR$/manifest.json" />
-        <option value="$PROJECT_DIR$/nameswap.js" />
-        <option value="$PROJECT_DIR$/pythonparser/genderComputer/genderComputer.py" />
-        <option value="$PROJECT_DIR$/pythonparser/test/dictUtils.py" />
-        <option value="$PROJECT_DIR$/pythonparser/dictionnary/Latin_WalloniaMaleUTF8.csv" />
-        <option value="$PROJECT_DIR$/pythonparser/dictionnary/Latin_WalloniaFemaleUTF8.csv" />
-        <option value="$PROJECT_DIR$/pythonparser/test/regexs" />
+        <option value="$PROJECT_DIR$/pythonparser/dictionnary/Latin_BrazilFemaleUTF8.csv" />
+        <option value="$PROJECT_DIR$/pythonparser/dictionnary/Latin_BelgiumMaleUTF8.csv" />
+        <option value="$PROJECT_DIR$/pythonparser/dictionnary/Latin_AustraliaMaleUTF8.csv" />
+        <option value="$PROJECT_DIR$/pythonparser/dictionnary/Latin_AustraliaFemaleUTF8.csv" />
+        <option value="$PROJECT_DIR$/pythonparser/dictionnary/Latin_CanadaFemaleUTF8.csv" />
+        <option value="$PROJECT_DIR$/pythonparser/dictionnary/Latin_CanadaMaleUTF8.csv" />
+        <option value="$PROJECT_DIR$/pythonparser/dictionnary/Latin_CzechFemaleUTF8.csv" />
+        <option value="$PROJECT_DIR$/pythonparser/dictionnary/Latin_CzechMaleUTF8.csv" />
+        <option value="$PROJECT_DIR$/pythonparser/dictionnary/Latin_FinlandFemaleUTF8.csv" />
+        <option value="$PROJECT_DIR$/pythonparser/dictionnary/Latin_FinlandMaleUTF8.csv" />
+        <option value="$PROJECT_DIR$/pythonparser/dictionnary/Latin_FlandersFemaleUTF8.csv" />
+        <option value="$PROJECT_DIR$/pythonparser/dictionnary/Latin_FlandersMaleUTF8.csv" />
+        <option value="$PROJECT_DIR$/pythonparser/dictionnary/Latin_FranceFemaleUTF8.csv" />
+        <option value="$PROJECT_DIR$/pythonparser/dictionnary/Latin_FranceMaleUTF8.csv" />
+        <option value="$PROJECT_DIR$/pythonparser/dictionnary/Latin_FrisiaFemaleUTF8.csv" />
+        <option value="$PROJECT_DIR$/pythonparser/dictionnary/Latin_FrisiaMaleUTF8.csv" />
+        <option value="$PROJECT_DIR$/pythonparser/dictionnary/Latin_GermanyFemaleUTF8.csv" />
+        <option value="$PROJECT_DIR$/pythonparser/dictionnary/Latin_GermanyMaleUTF8.csv" />
+        <option value="$PROJECT_DIR$/pythonparser/dictionnary/Latin_GreeceFemaleUTF8.csv" />
+        <option value="$PROJECT_DIR$/pythonparser/dictionnary/Latin_GreeceMaleUTF8.csv" />
+        <option value="$PROJECT_DIR$/pythonparser/dictionnary/Latin_IndiaFemaleUTF8.csv" />
+        <option value="$PROJECT_DIR$/pythonparser/dictionnary/Latin_IndiaMaleUTF8.csv" />
+        <option value="$PROJECT_DIR$/pythonparser/dictionnary/Latin_IranFemaleUTF8.csv" />
+        <option value="$PROJECT_DIR$/pythonparser/dictionnary/Latin_IranMaleUTF8.csv" />
+        <option value="$PROJECT_DIR$/pythonparser/dictionnary/Latin_IrelandFemaleUTF8.csv" />
+        <option value="$PROJECT_DIR$/pythonparser/dictionnary/Latin_IrelandMaleUTF8.csv" />
+        <option value="$PROJECT_DIR$/pythonparser/dictionnary/Latin_ItalyFemaleUTF8.csv" />
+        <option value="$PROJECT_DIR$/pythonparser/dictionnary/Latin_ItalyMaleUTF8.csv" />
+        <option value="$PROJECT_DIR$/pythonparser/dictionnary/Latin_NorwayFemaleUTF8.csv" />
+        <option value="$PROJECT_DIR$/pythonparser/dictionnary/Latin_NorwayMaleUTF8.csv" />
+        <option value="$PROJECT_DIR$/pythonparser/dictionnary/Latin_RomaniaFemaleUTF8.csv" />
+        <option value="$PROJECT_DIR$/pythonparser/dictionnary/Latin_RomaniaMaleUTF8.csv" />
+        <option value="$PROJECT_DIR$/pythonparser/dictionnary/Latin_SloveniaFemaleUTF8.csv" />
+        <option value="$PROJECT_DIR$/pythonparser/dictionnary/Latin_SloveniaMaleUTF8.csv" />
+        <option value="$PROJECT_DIR$/pythonparser/dictionnary/Latin_SomaliaFemaleUTF8.csv" />
+        <option value="$PROJECT_DIR$/pythonparser/dictionnary/Latin_SomaliaMaleUTF8.csv" />
+        <option value="$PROJECT_DIR$/pythonparser/dictionnary/Latin_SpainFemaleUTF8.csv" />
+        <option value="$PROJECT_DIR$/pythonparser/dictionnary/Latin_SpainMaleUTF8.csv" />
+        <option value="$PROJECT_DIR$/pythonparser/dictionnary/Latin_SwedenFemaleUTF8.csv" />
+        <option value="$PROJECT_DIR$/pythonparser/dictionnary/Latin_SwedenMaleUTF8.csv" />
+        <option value="$PROJECT_DIR$/pythonparser/dictionnary/Latin_UKFemaleUTF8.csv" />
+        <option value="$PROJECT_DIR$/pythonparser/dictionnary/Latin_UKMaleUTF8.csv" />
         <option value="$PROJECT_DIR$/pythonparser/dictionnary/Latin_USAFemaleUTF8.csv" />
         <option value="$PROJECT_DIR$/pythonparser/dictionnary/Latin_USAMaleUTF8.csv" />
-        <option value="$PROJECT_DIR$/pythonparser/dictionnary/Latin_ItalyMaleUTF8.csv" />
-        <option value="$PROJECT_DIR$/pythonparser/parser.py" />
-        <option value="$PROJECT_DIR$/pythonparser/namedicts_parser.py" />
-        <option value="$PROJECT_DIR$/pythonparser/dictionnary/Latin_AfghanistanMaleUTF8.csv" />
-        <option value="$PROJECT_DIR$/pythonparser/dictionnary/Latin_AfghanistanFemaleUTF8.csv" />
-        <option value="$PROJECT_DIR$/pythonparser/smalldict/Latin_AfghanistanFemaleUTF8.csv" />
-        <option value="$PROJECT_DIR$/pythonparser/smalldict/Latin_AfghanistanMaleUTF8.csv" />
-        <option value="$PROJECT_DIR$/pythonparser/smalldict/Latin_AustraliaFemaleUTF8.csv" />
-        <option value="$PROJECT_DIR$/pythonparser/smalldict/Latin_AustraliaMaleUTF8.csv" />
-        <option value="$PROJECT_DIR$/pythonparser/smalldict/Latin_FranceFemaleUTF8.csv" />
-        <option value="$PROJECT_DIR$/pythonparser/smalldict/Latin_FranceMaleUTF8.csv" />
-        <option value="$PROJECT_DIR$/pythonparser/dictionnary/diminutives.csv" />
-        <option value="$PROJECT_DIR$/pythonparser/dictionnary/Latin_AlbaniaFemaleUTF8.csv" />
-        <option value="$PROJECT_DIR$/pythonparser/dictionnary/Latin_AlbaniaMaleUTF8.csv" />
-        <option value="$PROJECT_DIR$/pythonparser/dictionnary/Latin_AustraliaFemaleUTF8.csv" />
-        <option value="$PROJECT_DIR$/pythonparser/dictionnary/Latin_AustraliaMaleUTF8.csv" />
+        <option value="$PROJECT_DIR$/pythonparser/dictionnary/Latin_VietnamFemaleUTF8.csv" />
+        <option value="$PROJECT_DIR$/pythonparser/dictionnary/Latin_VietnamMaleUTF8.csv" />
+        <option value="$PROJECT_DIR$/pythonparser/dictionnary/Latin_WalloniaFemaleUTF8.csv" />
+        <option value="$PROJECT_DIR$/pythonparser/dictionnary/Latin_WalloniaMaleUTF8.csv" />
+        <option value="$PROJECT_DIR$/pythonparser/json/name_associative_dictionnary_v2.json" />
         <option value="$PROJECT_DIR$/pythonparser/dictionnary/Latin_BelgiumFemaleUTF8.csv" />
-        <option value="$PROJECT_DIR$/pythonparser/dictionnary/Latin_BelgiumMaleUTF8.csv" />
-        <option value="$PROJECT_DIR$/pythonparser/dictionnary/Latin_BrazilFemaleUTF8.csv" />
-        <option value="$PROJECT_DIR$/pythonparser/dictionnary/Latin_BrazilMaleUTF8.csv" />
-        <option value="$PROJECT_DIR$/pythonparser/dictionnary/Latin_BrusselsFemaleUTF8.csv" />
+        <option value="$PROJECT_DIR$/pythonparser/namedicts_parser.py" />
       </list>
     </option>
   </component>
@@ -221,6 +222,34 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="sheChromeExtension">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="sheChromeExtension">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="pythonparser">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -261,6 +290,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="json" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sheChromeExtension" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sheChromeExtension" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pythonparser" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="dictionnary" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -277,34 +324,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="data" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="sheChromeExtension">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="sheChromeExtension">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="pythonparser">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -545,6 +564,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="3a30b3d3-a003-4c00-8f6a-a7b41ab4d83c" name="Default" comment="" />
@@ -561,29 +583,29 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18123667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18283582" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -605,342 +627,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_PolandFemaleUTF8.csv">
+    <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_AlbaniaMaleUTF8.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_NorwayLastNames.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_NorwayMaleUTF8.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-11481">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_NorwayFemaleUTF8.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1122">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_LatviaMaleUTF8.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7299">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_LatviaFemaleUTF8.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4131">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_ItalyMaleUTF8.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="22" lean-forward="false" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_IsraelFemaleUTF8.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_ItalyFemaleUTF8.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_IsraelMaleUTF8.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_IrelandMaleUTF8.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-99473">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_IranMaleUTF8.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3780">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_IndiaMaleUTF8.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-867">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_IndiaFemaleUTF8.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_HungaryMaleUTF8.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-357">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_HungaryFemaleUTF8.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_FrisiaMaleUTF8.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3111">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_GreeceFemaleUTF8.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_IrelandFemaleUTF8.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-158803">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_SomaliaMaleUTF8.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_FranceMaleUTF8.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_FrisiaFemaleUTF8.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_FranceFemaleUTF8.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-373">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_FlandersFemaleUTF8.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_FlandersMaleUTF8.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_CanadaMaleUTF8.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_CzechFemaleUTF8.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_CzechMaleUTF8.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6330">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_BrusselsMaleUTF8.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_CanadaFemaleUTF8.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pythonparser/test/gender.dict">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pythonparser/clean_json.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pythonparser/smalldict/Latin_AustraliaMaleUTF8.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="10" lean-forward="false" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pythonparser/smalldict/Latin_FranceFemaleUTF8.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="4" lean-forward="false" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pythonparser/smalldict/Latin_FranceMaleUTF8.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="4" lean-forward="false" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/diminutives.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2601">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_AfghanistanFemaleUTF8.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="1" lean-forward="false" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pythonparser/smalldict/Latin_AfghanistanMaleUTF8.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="4" lean-forward="false" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pythonparser/smalldict/Latin_AfghanistanFemaleUTF8.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="4" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pythonparser/smalldict/Latin_AustraliaFemaleUTF8.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="4" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pythonparser/namedicts_parser.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1156">
-          <caret line="68" column="0" lean-forward="true" selection-start-line="68" selection-start-column="0" selection-end-line="69" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_AfghanistanMaleUTF8.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="1" lean-forward="false" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="4" />
           <folding />
         </state>
       </provider>
@@ -953,34 +643,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_AlbaniaMaleUTF8.csv">
+    <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_AfghanistanMaleUTF8.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="4" lean-forward="false" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_AustraliaFemaleUTF8.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_AustraliaMaleUTF8.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="10" lean-forward="false" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_BelgiumFemaleUTF8.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="10" lean-forward="false" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="10" />
+          <caret line="0" column="1" lean-forward="false" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -993,7 +659,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_BrazilFemaleUTF8.csv">
+    <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_CanadaFemaleUTF8.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_CanadaMaleUTF8.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="14" lean-forward="false" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_CzechMaleUTF8.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="4" lean-forward="false" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_FinlandFemaleUTF8.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="4" lean-forward="false" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_FinlandMaleUTF8.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="4" lean-forward="false" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_FlandersFemaleUTF8.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_FlandersMaleUTF8.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="10" lean-forward="false" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="10" />
@@ -1001,7 +715,111 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_BrazilMaleUTF8.csv">
+    <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_FranceFemaleUTF8.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_FranceMaleUTF8.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="4" lean-forward="false" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_FrisiaFemaleUTF8.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="6" lean-forward="true" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_FrisiaMaleUTF8.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="4" lean-forward="false" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_GermanyFemaleUTF8.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="4" lean-forward="false" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_GermanyMaleUTF8.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="4" lean-forward="false" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_GreeceFemaleUTF8.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="4" lean-forward="false" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_GreeceMaleUTF8.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="4" lean-forward="false" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_IndiaFemaleUTF8.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="4" lean-forward="false" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_IndiaMaleUTF8.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="4" lean-forward="false" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_IranFemaleUTF8.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="4" lean-forward="false" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_IranMaleUTF8.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="4" lean-forward="false" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_IrelandFemaleUTF8.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_IrelandMaleUTF8.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="10" lean-forward="false" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="10" />
@@ -1009,11 +827,213 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_BrusselsFemaleUTF8.csv">
+    <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_ItalyMaleUTF8.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="12" lean-forward="true" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
+        <state relative-caret-position="0">
+          <caret line="0" column="35" lean-forward="false" selection-start-line="0" selection-start-column="35" selection-end-line="0" selection-end-column="35" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_NorwayFemaleUTF8.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_NorwayMaleUTF8.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="10" lean-forward="false" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_RomaniaFemaleUTF8.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="4" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_RomaniaMaleUTF8.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="4" lean-forward="false" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_SloveniaFemaleUTF8.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_SloveniaMaleUTF8.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="10" lean-forward="false" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_SomaliaFemaleUTF8.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="4" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_SomaliaMaleUTF8.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="4" lean-forward="false" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_SpainFemaleUTF8.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_SpainMaleUTF8.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="10" lean-forward="false" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_SwedenFemaleUTF8.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1275">
+          <caret line="0" column="10" lean-forward="false" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_SwedenMaleUTF8.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="10" lean-forward="false" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_UKFemaleUTF8.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="10" lean-forward="false" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_UKMaleUTF8.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="10" lean-forward="false" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_USAMaleUTF8.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_VietnamFemaleUTF8.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_VietnamMaleUTF8.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="4" lean-forward="false" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_WalloniaFemaleUTF8.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="10" lean-forward="false" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_BelgiumFemaleUTF8.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="48" column="13" lean-forward="true" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pythonparser/json/name_associative_dictionnary_v2.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="42568" lean-forward="false" selection-start-line="0" selection-start-column="42568" selection-end-line="0" selection-end-column="42568" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_WalloniaMaleUTF8.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="11" lean-forward="true" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_USAFemaleUTF8.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_CzechFemaleUTF8.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="41" column="6" lean-forward="true" selection-start-line="41" selection-start-column="6" selection-end-line="41" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_ItalyFemaleUTF8.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pythonparser/namedicts_parser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="443">
+          <caret line="68" column="36" lean-forward="false" selection-start-line="68" selection-start-column="36" selection-end-line="68" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
