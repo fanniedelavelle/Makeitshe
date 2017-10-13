@@ -1,9 +1,15 @@
-
 ## This extension aims to replace certain male words with their female counterparts.
 
+## INSTALL  
+- `npm install` 
+
+## BUILD  
+- `npm run build`
+
 ## Steps to test:
-1. Upload the folder unzipped to google chrome extensions in Developer mode.
-2. After changes, Reload extension. in chrome://extensions/
+1. Install and build
+2. Upload the `dist` folder unzipped to google chrome extensions in Developer mode.
+3. After changes, Reload extension. in chrome://extensions/
 
 
 ## TODO ##
