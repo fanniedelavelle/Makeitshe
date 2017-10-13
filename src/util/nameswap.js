@@ -26,23 +26,23 @@ var swapNames = function(){
 
     // loop through the html tags
     for (var i = 0; i < elements.length; i++) {
-      var element = elements[i];
-      // loop inside the tags for child nodes
-      for (var j = 0; j < element.childNodes.length; j++) {
-        var node = element.childNodes[j];
+        var element = elements[i];
+        // loop inside the tags for child nodes
+        for (var j = 0; j < element.childNodes.length; j++) {
+            var node = element.childNodes[j];
 
-        // if the element is text get its value and replace the text with something else.
-        if (node.nodeType === 3) {
-          var text = node.nodeValue;
+            // if the element is text get its value and replace the text with something else.
+            if (node.nodeType === 3) {
+                var text = node.nodeValue;
 
-          var updated_text = replaceAll(text, json_map, names_regex);
-            if(element!=null && updated_text != false){
-                console.log(updated_text);
-                element.innerHTML = updated_text;
+                var updated_text = replaceAll(text, json_map, names_regex);
+                if(element!=null && updated_text != false){
+                    console.log(updated_text);
+                    element.innerHTML = updated_text;
+                }
             }
         }
-      }
     }
 };
 
-swapNames();
+export default swapNames;
