@@ -1,0 +1,19 @@
+{
+  "name": "shechromeextension",
+  "version": "1.0.0",
+  "description": "## Steps to test: 1. Upload the folder unzipped to google chrome extensions in Developer mode. 2. After changes, Reload extension. in chrome://extensions/",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/houdabenqassem/sheChromeExtension.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/houdabenqassem/sheChromeExtension/issues"
+  },
+  "homepage": "https://github.com/houdabenqassem/sheChromeExtension#readme"
+}
