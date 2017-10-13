@@ -1,9 +1,9 @@
-## This extension aims to replace certain male words with their female counterparts.
+# This extension aims to replace certain male words with their female counterparts.
 
-## INSTALL  
+## Install  
 - `npm install` 
 
-## BUILD  
+## Build  
 - `npm run build`
 
 ## Steps to test:
