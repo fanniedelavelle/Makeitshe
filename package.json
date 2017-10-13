@@ -4,7 +4,7 @@
   "description": "## Steps to test: 1. Upload the folder unzipped to google chrome extensions in Developer mode. 2. After changes, Reload extension. in chrome://extensions/",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rollup --config"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,15 @@
   "bugs": {
     "url": "https://github.com/houdabenqassem/sheChromeExtension/issues"
   },
-  "homepage": "https://github.com/houdabenqassem/sheChromeExtension#readme"
+  "homepage": "https://github.com/houdabenqassem/sheChromeExtension#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-preset-env": "^1.6.0",
+    "rollup": "^0.50.0",
+    "rollup-plugin-babel": "^3.0.2",
+    "rollup-plugin-copy": "^0.2.3",
+    "rollup-plugin-node-resolve": "^3.0.0"
+  },
+  "dependencies": {}
 }
