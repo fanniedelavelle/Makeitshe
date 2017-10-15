@@ -8,6 +8,40 @@ var f_count = 0;
 
 // Json with words dictionary
 var words = window.word_dict;
+const walker = document.createTreeWalker(
+  document.body,
+  NodeFilter.SHOW_TEXT,
+  { acceptNode: function(node) { return NodeFilter.FILTER_ACCEPT; } },
+  false
+);
+
+//takes a text node and replaces words
+const replaceWords = textNode => {
+  let text = textNode.textContent;
+  for (let entry of Object.entries(word_dict)) {
+    const [male, female] = entry;
+    const re = new RegExp("\\b" + male + "\\b", 'gi');
+    text = text.replace(re, female);
+  }
+  console.log(text);
+  textNode.textContent = text;
+}
+
+while(walker.nextNode()) {
+  const textNode = walker.currentNode;
+  replaceWords(textNode);
+};
+
+
+
+
+
+
+
+
+
+
+/*
 
 // Get all elements from the html
 var elements = document.getElementsByTagName('*');
@@ -74,7 +108,7 @@ var swapMale = function() {
                 // If in a text area, such as a tweet, don't replace!
               } else {
                 // Any other type of text, OK to replace and format
-                s_replace = '<span class="replacement tooltip">' + f_word + '</span>';
+                s_replace = '<span class="replacement">' + f_word + '</span>';
                 element.innerHTML = element.innerHTML.replace(s, s_replace);
               }
               m_count++;
@@ -95,8 +129,8 @@ console.log("Done replacing");
 
 // Calculate percentages
 m_percent = Math.round(m_count / (m_count + f_count) * 100);
-f_percent = Math.round(f_count / (m_count + f_count) * 100);
-
+f_percent = Math.round(f_count / (m_count + f_count) * 100);*/
+/*  
 
 // MESSAGING
 // In order to communicate between the content script and the popup
@@ -118,7 +152,7 @@ chrome.runtime.onMessage.addListener(function(msg, sender, response) {
     };
 
     // Directly respond to the sender (popup),
-    // through the specified callback */
+    // through the specified callback 
     response(stats);
   }
-});
+});*/
