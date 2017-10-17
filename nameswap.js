@@ -4,14 +4,22 @@
 var t0 = performance.now();
 var json_map = window.name_dict;
 
+var ignore_names = ['San Diego', 'San Francisco', 'New York'];
+var ignore_regex = new RegExp(ignore_names.join("|")+"?","g");
 var names_regex = new RegExp(Object.keys(json_map).join(" |")+'(\.|,|;|:)?',"g");
+console.log(names_regex);
 
 function replaceAll(str,mapObj,names_regex){
     var mod = false;
     new_string = str.replace(names_regex, function(matched){
-        mod = true;
         var replace_by = mapObj[matched.trim()];
-        return '<span class="replacement"> '+mapObj[matched.trim()]+ ' </span>';
+        console.log(ignore_regex,str,ignore_regex.test(str));
+        if(!ignore_regex.test(str)){
+            mod = true;
+            return '<span class="replacement"> '+replace_by+ ' </span>';
+        } else {
+            return false;
+        }
     });
     if(mod){
         return new_string;
