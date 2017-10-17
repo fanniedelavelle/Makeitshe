@@ -4,16 +4,22 @@
 var t0 = performance.now();
 var json_map = window.name_dict;
 
+var ignore_names = ['San Diego', 'San Francisco', 'New York'];
+var ignore_regex = new RegExp(ignore_names.join("|")+"?","g");
 var names_regex = new RegExp(Object.keys(json_map).join(" |")+'(\.|,|;|:)?',"g");
-
-var exclude_tags = ['TITLE', "TEXTAREA", "NOSCRIPT", "META", "STYLE", "SCRIPT", "G-SECTION-WITH-HEADER", "IMG", "LINK"];
+console.log(names_regex);
 
 function replaceAll(str,mapObj,names_regex){
     var mod = false;
     new_string = str.replace(names_regex, function(matched){
-        mod = true;
         var replace_by = mapObj[matched.trim()];
-        return '<span class="replacement"> '+mapObj[matched.trim()]+ ' </span>';
+        console.log(ignore_regex,str,ignore_regex.test(str));
+        if(!ignore_regex.test(str)){
+            mod = true;
+            return '<span class="replacement"> '+replace_by+ ' </span>';
+        } else {
+            return false;
+        }
     });
     if(mod){
         return new_string;
@@ -23,31 +29,20 @@ function replaceAll(str,mapObj,names_regex){
 }
 
 var swapNames = function(){
-    var inputs = document.getElementsByTagName('*');
-    var neededElements = [];
-
-    for (var i = 0, length = inputs.length; i < length; i++) {
-        // console.log(inputs[i].nodeName);
-        if (exclude_tags.indexOf(inputs[i].nodeName) <= -1) {
-             neededElements.push(inputs[i]);
-        }
-    }
-
+    var elements = document.getElementsByTagName('*');
     // loop through the html tags
-    for (var j = 0; j < neededElements.length; j++) {
-      var neededElement = neededElements[j];
+    for (var i = 0; i < elements.length; i++) {
+      var element = elements[i];
       // loop inside the tags for child nodes
-      for (var k = 0; k < neededElement.childNodes.length; k++) {
-        var node = neededElement.childNodes[k];
-
+      for (var j = 0; j < element.childNodes.length; j++) {
+        var node = element.childNodes[j];
         // if the element is text get its value and replace the text with something else.
         if (node.nodeType === 3) {
           var text = node.nodeValue;
-            if (exclude_tags.indexOf(node.nodeName) <= -1) {
-                var updated_text = replaceAll(text, json_map, names_regex);
-                if(neededElement!=null && updated_text != false){
-                    neededElement.innerHTML = updated_text;
-                }
+
+          var updated_text = replaceAll(text, json_map, names_regex);
+            if(element!=null && updated_text != false){
+                element.innerHTML = updated_text;
             }
         }
       }
@@ -56,4 +51,4 @@ var swapNames = function(){
 
 swapNames();
 var t1 = performance.now();
-console.log("Nameswapping took " + (t1 - t0) + " milliseconds.")
+console.log("Call to swapNames took " + (t1 - t0) + " milliseconds.");
