@@ -1,14 +1,22 @@
 {
-"manifest_version": 2,
-    "name": "[sheChromeExtension]",
-    "description": "[This extension aims to replace certain male words with their female counterparts.]",
-    "version": "1.0",
-    "content_scripts": [
-        {
-            "matches":["*://*/*"],
-            "js": ["content.js", "data/associative.js", "nameswap.js"],
-            "css":["style.css"],
-            "run_at": "document_end"
-        }
-    ]
+  "manifest_version": 2,
+  "name": "[sheChromeExtension]",
+  "description": "[This extension aims to replace certain male words with their female counterparts.]",
+  "version": "1.0",
+  "background": {
+    "persistent": false,
+    "scripts": ["background.js"]
+  },
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [{
+    "matches": ["*://*/*"],
+    "js": ["data/words.js", "data/associative.js", "content.js"],
+    "css": ["style.css"],
+    "run_at": "document_end"
+  }],
+  "permissions": [
+    "tabs"
+  ]
 }
