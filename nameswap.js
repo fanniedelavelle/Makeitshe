@@ -4,7 +4,7 @@
 var t0 = performance.now();
 var json_map = window.name_dict;
 
-var ignore_names = ['San Diego', 'San Francisco', 'New York', 'Hillary Clinton'];
+var ignore_names = ['San Diego', 'San Francisco', 'New York', 'Hillary Clinton', 'Headphone jack'];
 var ignore_regex = new RegExp(ignore_names.join("|"),"gi");
 var names_regex = new RegExp(Object.keys(json_map).join(" |")+'(\.|,|;|:)?',"g");
 console.log(names_regex);
