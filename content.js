@@ -70,7 +70,17 @@ function replaceAll(str, mapObj, regex) {
         replacement = replacement.charAt(0).toUpperCase() + replacement.slice(1);
       }
       mod = true;
-      return '<span class="replacement"> ' + replacement + ' </span>';
+      if (element.nodeName == "TITLE") {
+        // If male word is in title, don't format it
+        document.title = document.title.replace(matched, replacement + " ");
+        return replacement + " ";
+      } else if (element.nodeName == "TEXTAREA") {
+        // If in a text area, such as a tweet, don't replace!
+        return matched;
+      } else {
+        // Any other type of text, OK to replace and format
+        return '<span class="replacement">' + replacement + ' </span>';
+      }
     });
   }
   if (mod) {
@@ -80,11 +90,12 @@ function replaceAll(str, mapObj, regex) {
   }
 }
 
+var element;
 // Find function
 var findAll = function(mapObj, regex) {
   // loop through the html tags
   for (var i = 0; i < elements.length; i++) {
-    var element = elements[i];
+    element = elements[i];
     // loop inside the tags for child nodes
     for (var j = 0; j < element.childNodes.length; j++) {
       var node = element.childNodes[j];
@@ -112,7 +123,7 @@ f_percent = Math.round(f_count / (m_count + f_count) * 100);
 
 var t1 = performance.now();
 console.log("Finding and replacing all values took " + (t1 - t0) + " milliseconds.");
-console.log("Found "+m_count +" male values and "+f_count+" female values.");
+console.log("Found " + m_count + " male values and " + f_count + " female values.");
 
 
 // MESSAGING
