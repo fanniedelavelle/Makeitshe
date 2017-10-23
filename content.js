@@ -69,16 +69,18 @@ function replaceAll(str, mapObj, regex) {
         // replace with upper case word
         replacement = replacement.charAt(0).toUpperCase() + replacement.slice(1);
       }
-      mod = true;
       if (element.nodeName == "TITLE") {
         // If male word is in title, don't format it
         document.title = document.title.replace(matched, replacement + " ");
+        mod = true;
         return replacement + " ";
       } else if (element.nodeName == "TEXTAREA") {
         // If in a text area, such as a tweet, don't replace!
+        mod = true;
         return matched;
       } else {
         // Any other type of text, OK to replace and format
+        mod = true;
         return '<span class="replacement">' + replacement + ' </span>';
       }
     });
@@ -99,12 +101,12 @@ var findAll = function(mapObj, regex) {
     // loop inside the tags for child nodes
     for (var j = 0; j < element.childNodes.length; j++) {
       var node = element.childNodes[j];
-      // if the element is text get its value and replace the text with something else.
-      if (node.nodeType === 3) {
+       if (node.nodeType === 3) {
         var text = node.nodeValue;
         var updated_text = replaceAll(text, mapObj, regex);
         if (element != null && updated_text != false) {
-          element.innerHTML = updated_text;
+          element.innerHTML = element.innerHTML.replace(text, updated_text);
+          // element.innerHTML = updated_text;
         }
       }
     }
