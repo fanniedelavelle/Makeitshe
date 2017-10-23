@@ -1,5 +1,5 @@
 window.word_dict = {
-  "Mr":"Ms",
+  "mr":"ms",
   "he": "she",
   "his": "her",
   "man": "woman",
