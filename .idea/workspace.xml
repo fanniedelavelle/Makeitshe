@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3a30b3d3-a003-4c00-8f6a-a7b41ab4d83c" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/content.js" afterPath="$PROJECT_DIR$/content.js" />
     </list>
     <ignored path="sheChromeExtension.iws" />
@@ -36,8 +37,8 @@
       <file leaf-file-name="nameswap.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/nameswap.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="42" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="42" />
+            <state relative-caret-position="113">
+              <caret line="29" column="27" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -56,8 +57,8 @@
       <file leaf-file-name="content.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/content.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="771">
-              <caret line="206" column="14" selection-start-line="206" selection-start-column="14" selection-end-line="206" selection-end-column="14" />
+            <state relative-caret-position="159">
+              <caret line="101" column="17" selection-start-line="101" selection-start-column="17" selection-end-line="101" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -325,12 +326,12 @@
       <option name="presentableId" value="Default" />
       <updated>1506553876716</updated>
       <workItem from="1506553877840" duration="1692000" />
-      <workItem from="1508700699184" duration="10277000" />
+      <workItem from="1508700699184" duration="13648000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11969000" />
+    <option name="totallyTimeSpent" value="15340000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1382" height="744" extended-state="6" />
@@ -453,8 +454,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/nameswap.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="42" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="42" />
+        <state relative-caret-position="113">
+          <caret line="29" column="27" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
           <folding />
         </state>
       </provider>
@@ -469,8 +470,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/content.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="771">
-          <caret line="206" column="14" selection-start-line="206" selection-start-column="14" selection-end-line="206" selection-end-column="14" />
+        <state relative-caret-position="159">
+          <caret line="101" column="17" selection-start-line="101" selection-start-column="17" selection-end-line="101" selection-end-column="17" />
           <folding />
         </state>
       </provider>

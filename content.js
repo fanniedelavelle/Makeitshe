@@ -98,15 +98,17 @@ var findAll = function(mapObj, regex) {
   // loop through the html tags
   for (var i = 0; i < elements.length; i++) {
     element = elements[i];
-    // loop inside the tags for child nodes
-    for (var j = 0; j < element.childNodes.length; j++) {
-      var node = element.childNodes[j];
-      // if the element is text get its value and replace the text with something else.
-      if (node.nodeType === 3) {
-        var text = node.nodeValue;
-        var updated_text = replaceAll(element, text, mapObj, regex);
-        if (element != null && updated_text != false) {
-          element.innerHTML = updated_text;
+    if(ignore_scripts.indexOf(element.nodeName)){
+      // loop inside the tags for child nodes
+      for (var j = 0; j < element.childNodes.length; j++) {
+        var node = element.childNodes[j];
+        // if the element is text get its value and replace the text with something else.
+        if (node.nodeType === 3) {
+          var text = node.nodeValue;
+          var updated_text = replaceAll(element, text, mapObj, regex);
+          if (element != null && updated_text != false) {
+            element.innerHTML = updated_text;
+          }
         }
       }
     }
@@ -161,14 +163,15 @@ var observer = new MutationObserver(function(mutations) {
       if(mutation.addedNodes.length >= 1){
         var target = mutation.target;
         Object.keys(mutation.addedNodes).map(function(objectKey, index) {
-            if(mutation.addedNodes[index].nodeType == 3){
+          if(ignore_scripts.indexOf(mutation.addedNodes[index].nodeName)){
+            if (mutation.addedNodes[index].nodeType == 3) {
               var childText = mutation.addedNodes[index].nodeValue;
               var updated_node_text = replaceAll(element, childText, names, names_regex);
               var element = mutation.addedNodes[index];
-              if(updated_node_text != false){
-                updated_node_text_words  = replaceAll(element, updated_node_text, words, words_regex);
+              if (updated_node_text != false) {
+                updated_node_text_words = replaceAll(element, updated_node_text, words, words_regex);
               } else {
-                updated_node_text_words  = replaceAll(element, childText, words, words_regex);
+                updated_node_text_words = replaceAll(element, childText, words, words_regex);
               }
               if (updated_node_text_words != false) {
                 mutation.addedNodes[index].innerHTML = updated_node_text_words;
@@ -181,30 +184,32 @@ var observer = new MutationObserver(function(mutations) {
             // loop inside the tags for child nodes
             for (var i = 0; i < elements.length; i++) {
               var element = elements[i];
-              if(ignore_scripts.indexOf(element.nodeName) == -1)
-              for (var j = 0; j < element.childNodes.length; j++) {
-                var childNode = element.childNodes[j];
-                // if the element is text get its value and replace the text with something else.
-                if (childNode.nodeType === 3) {
-                  var childText = childNode.nodeValue;
-                  var updated_node_text = replaceAll(element, childText, names, names_regex);
-                  if(updated_node_text != false){
-                    updated_node_text_words  = replaceAll(element, updated_node_text, words, words_regex);
-                  } else {
-                    updated_node_text_words  = replaceAll(element, childText, words, words_regex);
-                  }
-                  if (updated_node_text_words != false) {
-                    element.innerHTML = updated_node_text_words;
-                  } else if (updated_node_text != false) {
-                    element.innerHTML = updated_node_text;
+              if (ignore_scripts.indexOf(element.nodeName) == -1)
+                for (var j = 0; j < element.childNodes.length; j++) {
+                  var childNode = element.childNodes[j];
+                  // if the element is text get its value and replace the text with something else.
+                  if (childNode.nodeType === 3) {
+                    var childText = childNode.nodeValue;
+                    var updated_node_text = replaceAll(element, childText, names, names_regex);
+                    if (updated_node_text != false) {
+                      updated_node_text_words = replaceAll(element, updated_node_text, words, words_regex);
+                    } else {
+                      updated_node_text_words = replaceAll(element, childText, words, words_regex);
+                    }
+                    if (updated_node_text_words != false) {
+                      element.innerHTML = updated_node_text_words;
+                    } else if (updated_node_text != false) {
+                      element.innerHTML = updated_node_text;
+                    }
                   }
                 }
-              }
             }
+        }
         });
       }
     } catch(err){
-      return; 
+      console.log(err);
+      return;
     }
   });
 });
