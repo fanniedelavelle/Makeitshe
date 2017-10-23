@@ -15,5 +15,6 @@ window.word_dict = {
   "congressman": "congresswoman",
   "himself": "herself",
   "wizard": "wizardress",
-  "lord": "lady"
+  "lord": "lady",
+  'husband': 'wife'
 }
