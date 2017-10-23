@@ -18,22 +18,32 @@ const walker = document.createTreeWalker(
 //takes a text node and replaces words
 const replaceWords = textNode => {
   let text = textNode.textContent;
+  let span = document.createElement('span');
   for (let entry of Object.entries(word_dict)) {
     const [male, female] = entry;
     const re = new RegExp("\\b" + male + "\\b", 'gi');
-    text = text.replace(re, female);
+    text = text.replace(re, `
+        <span class="replacement">
+            <span class="tooltiptext">
+               ${male}
+            </span>
+            ${female}
+        </span>
+    `);
   }
-  console.log(text);
-  textNode.textContent = text;
+  span.innerHTML = text;
+  return span;
 }
 
+const nodesToReplace = [];
 while(walker.nextNode()) {
   const textNode = walker.currentNode;
-  replaceWords(textNode);
+  const span = replaceWords(textNode);
+  nodesToReplace.push([span, textNode]);
 };
-
-
-
+nodesToReplace.forEach(([span, textNode]) =>
+    textNode.parentElement.replaceChild(span, textNode)
+);
 
 
 
