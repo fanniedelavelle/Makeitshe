@@ -48,7 +48,7 @@ tweetB.onclick = function() {
 };
 
 function setTweet(m, f) {
-  tweetText = "There's " + m + "% male presence vs " + f + "% female presence on this page.";
+  tweetText = m + "% mentions of men vs " + f + "% women on this page. Let's bridge the gender gap!";
   var activeTab;
   chrome.tabs.query({
     active: true,
@@ -60,7 +60,7 @@ function setTweet(m, f) {
 
     // Set the tweet text and parameters
     console.log(activeTab.url);
-    tweetUrl = "https://twitter.com/intent/tweet?text=" + encodeURIComponent(tweetText) + "&url=" + activeTab.url + "&hashtags="+ "WomenInMedia" + "&via=sheChromeExtension";
+    tweetUrl = "https://twitter.com/intent/tweet?text=" + encodeURIComponent(tweetText) + "&url=" + activeTab.url + "&via=makeitshe";
     document.getElementById("stats").style.display = "block";
     tweetB.style.color = "red";
   });
