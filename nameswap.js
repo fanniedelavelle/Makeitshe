@@ -38,7 +38,6 @@ var swapNames = function(){
         // if the element is text get its value and replace the text with something else.
         if (node.nodeType === 3) {
           var text = node.nodeValue;
-
           var updated_text = replaceAll(text, json_map, names_regex);
             if(element!=null && updated_text != false){
                 element.innerHTML = updated_text;
