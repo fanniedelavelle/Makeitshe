@@ -12,8 +12,16 @@ window.word_dict = {
   "sir": "madam",
   "actor": "actress",
   "boy": "girl",
+  "boys":"girls",
   "congressman": "congresswoman",
   "himself": "herself",
   "wizard": "wizardress",
-  "lord": "lady"
+  "lord": "lady",
+  "guy":"gal",
+  "groom":"bride",
+  "king":"queen",
+  "hero":"heroine",
+  "policeman":"policewoman",
+  "husband":"wife",
+  "son":"daughter"
 }
