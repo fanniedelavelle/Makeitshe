@@ -17,5 +17,8 @@ window.word_dict = {
   "himself": "herself",
   "wizard": "wizardress",
   "lord": "lady",
-  'husband': 'wife'
+  'husband': 'wife',
+  'guy': 'girl',
+  'guys': 'girls',
+  'boyfriend': 'girlfriend'
 };
