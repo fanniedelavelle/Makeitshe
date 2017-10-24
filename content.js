@@ -28,7 +28,7 @@ var words_regex = new RegExp("\\b" + Object.keys(words).join("\\b|\\b"), "gi");
 // FEMALE
 var f_words_regex = new RegExp("\\b" + Object.values(words).join("\\b|\\b"), "gi");
 
-var ignore_scripts = ['SCRIPT', '#comment', 'HEAD', 'CODE'];
+var ignore_scripts = ['SCRIPT', '#comment', 'HEAD', 'CODE', 'LINK', 'META', 'IMG', 'BR'];
 
 
 
@@ -98,18 +98,34 @@ var findAll = function(mapObj, regex) {
   // loop through the html tags
   for (var i = 0; i < elements.length; i++) {
     element = elements[i];
-    if(ignore_scripts.indexOf(element.nodeName)){
+    if(ignore_scripts.indexOf(element.nodeName) == -1){
+      console.log(element.nodeName);
+
       // loop inside the tags for child nodes
       for (var j = 0; j < element.childNodes.length; j++) {
         var node = element.childNodes[j];
-        // if the element is text get its value and replace the text with something else.
-        if (node.nodeType === 3) {
-          var text = node.nodeValue;
-          var updated_text = replaceAll(element, text, mapObj, regex);
-          if (element != null && updated_text != false) {
-            element.innerHTML = updated_text;
+        console.log(node.childNodes);
+        //this condition was just added to test
+        if(node.childNodes.length > 1){
+          for(var k = 0; k < node.childNodes.length; k++){
+            var child_node = node.childNodes[k];
+            var text = child_node.nodeValue;
+            var updated_text = replaceAll(element, text, mapObj, regex);
+            if (element != null && updated_text != false) {
+              node.innerHTML = updated_text;
+            }
+          }
+        } else {
+          // if the element is text get its value and replace the text with something else.
+          if (node.nodeType === 3 && ignore_scripts.indexOf(node.nodeName) == -1) {
+            var text = node.nodeValue;
+            var updated_text = replaceAll(element, text, mapObj, regex);
+            if (element != null && updated_text != false) {
+              element.innerHTML = updated_text;
+            }
           }
         }
+
       }
     }
   }
