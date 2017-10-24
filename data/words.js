@@ -23,5 +23,6 @@ window.word_dict = {
   "hero":"heroine",
   "policeman":"policewoman",
   "husband":"wife",
-  "son":"daughter"
+  "son":"daughter",
+  "dad":"mom"
 }

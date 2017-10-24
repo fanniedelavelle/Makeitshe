@@ -14,19 +14,20 @@ var names = window.name_dict;
 // MALE
 var ignore_names = ['San Diego', 'San Francisco', 'New York', 'Hillary Clinton'];
 var ignore_regex = new RegExp(ignore_names.join("|"), "g");
-var names_regex = new RegExp(Object.keys(names).join(" |") + '(\.|,|;|:)?', "g");
+var names_regex = new RegExp(Object.keys(names).join(" |") + "(\.|\,|'|;|:)?", "g");
 // FEMALE
 var f_ignore_names = [];
 var f_ignore_regex = new RegExp(ignore_names.join("|"), "g");
-var f_names_regex = new RegExp(Object.values(names).join(" |") + '(\.|,|;|:)?', "g");
+var f_names_regex = new RegExp(Object.values(names).join(" |") + "(\.|\,|'|;|:)?", "g");
 
 
 // Json with words
 var words = window.word_dict;
 // MALE
-var words_regex = new RegExp("\\b" + Object.keys(words).join("\\b|\\b"), "gi");
+var words_regex = new RegExp("\\b" + Object.keys(words).join("\\b|\\b")+ "[\.|\,|\'|\;|\:]?", "gi");
+console.log(words_regex);
 // FEMALE
-var f_words_regex = new RegExp("\\b" + Object.values(words).join("\\b|\\b"), "gi");
+var f_words_regex = new RegExp("\\b" + Object.values(words).join("\\b|\\b")+ "(\.|\,|'|;|:)?", "gi");
 
 
 
@@ -63,12 +64,13 @@ function replaceAll(str, mapObj, regex) {
       m_count++;
       var replacement = mapObj[matched.trim()];
       // If it can't find it it's in uppercase:
-      if (replacement == null) {
+      if (replacement == null || replacement == undefined) {
         // match to lower case word
         replacement = mapObj[matched.toLowerCase().trim()];
         // replace with upper case word
         replacement = replacement.charAt(0).toUpperCase() + replacement.slice(1);
       }
+
       if (element.nodeName == "TITLE") {
         // If male word is in title, don't format it
         document.title = document.title.replace(matched, replacement + " ");
