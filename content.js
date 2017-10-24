@@ -14,20 +14,19 @@ var names = window.name_dict;
 // MALE
 var ignore_names = ['San Diego', 'San Francisco', 'New York', 'Hillary Clinton'];
 var ignore_regex = new RegExp(ignore_names.join("|"), "g");
-var names_regex = new RegExp(Object.keys(names).join(" |") + "(\.|\,|'|;|:)?", "g");
+var names_regex = new RegExp(Object.keys(names).join(" |") + '(\.|,|;|:)?', "g");
 // FEMALE
 var f_ignore_names = [];
 var f_ignore_regex = new RegExp(ignore_names.join("|"), "g");
-var f_names_regex = new RegExp(Object.values(names).join(" |") + "(\.|\,|'|;|:)?", "g");
+var f_names_regex = new RegExp(Object.values(names).join(" |") + '(\.|,|;|:)?', "g");
 
 
 // Json with words
 var words = window.word_dict;
 // MALE
-var words_regex = new RegExp("\\b" + Object.keys(words).join("\\b|\\b")+ "[\.|\,|\'|\;|\:]?", "gi");
-console.log(words_regex);
+var words_regex = new RegExp("\\b" + Object.keys(words).join("\\b|\\b"), "gi");
 // FEMALE
-var f_words_regex = new RegExp("\\b" + Object.values(words).join("\\b|\\b")+ "(\.|\,|'|;|:)?", "gi");
+var f_words_regex = new RegExp("\\b" + Object.values(words).join("\\b|\\b"), "gi");
 
 
 
