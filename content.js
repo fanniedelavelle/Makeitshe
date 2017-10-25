@@ -82,7 +82,7 @@ function replaceAll(str, mapObj, regex) {
       } else {
         // Any other type of text, OK to replace and format
         mod = true;
-        return '<span class="replacement">' + replacement + ' </span>';
+         return '<span class="replacement">' + replacement + '<span class="tooltiptext">'+ replacement + '</span>' + '</span>';
       }
     });
   }
