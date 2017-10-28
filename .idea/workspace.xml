@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="3a30b3d3-a003-4c00-8f6a-a7b41ab4d83c" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/compromise.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/name_associative_dictionnary_filtered.js" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/pythonparser/README.md" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/pythonparser/add_usa_names.py" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/pythonparser/clean_quebec_names.py" afterPath="" />
@@ -69,6 +70,7 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/pythonparser/dictionnary/diminutives.csv" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/pythonparser/englishnames/commonnouns.txt" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/pythonparser/englishnames/excluderegex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pythonparser/englishnames/keystoadd.csv" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/pythonparser/export_gendered_dicts.py" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/pythonparser/filtered_dicts/Latin_AfroAmericanFemaleUTF8.csv" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/pythonparser/filtered_dicts/Latin_AfroAmericanMaleUTF8.csv" afterPath="" />
@@ -245,12 +247,8 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/pythonparser/test/gender.dict" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/pythonparser/test/regexs" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/background.js" afterPath="$PROJECT_DIR$/background.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/content.js" afterPath="$PROJECT_DIR$/content.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/associative.js" afterPath="$PROJECT_DIR$/data/associative.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nameswap.js" afterPath="$PROJECT_DIR$/nameswap.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/popup.js" afterPath="$PROJECT_DIR$/popup.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonparser/englishnames/keystoadd.csv" afterPath="$PROJECT_DIR$/pythonparser/englishnames/keystoadd.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style.css" afterPath="$PROJECT_DIR$/style.css" />
     </list>
     <ignored path="sheChromeExtension.iws" />
@@ -271,61 +269,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="manifest.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/manifest.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="45" column="11" lean-forward="false" selection-start-line="45" selection-start-column="11" selection-end-line="45" selection-end-column="11" />
+            <state relative-caret-position="323">
+              <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="nameswap.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nameswap.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="419">
-              <caret line="29" column="27" lean-forward="false" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="content.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="content.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/content.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1071">
-              <caret line="63" column="5" lean-forward="true" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="popup.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/popup.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="867">
-              <caret line="51" column="16" lean-forward="false" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitinore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitinore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            <state relative-caret-position="178">
+              <caret line="244" column="31" lean-forward="true" selection-start-line="244" selection-start-column="31" selection-end-line="244" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -366,6 +324,9 @@
       <find>HEAD</find>
       <find>ignore_scripts</find>
       <find>replace</find>
+      <find>gender.json</find>
+      <find>stats</find>
+      <find>.replacement</find>
       <find>replaceAll</find>
     </findStrings>
     <dirStrings>
@@ -379,8 +340,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pythonparser/dictionnary/Latin_CzechMaleUTF8.csv" />
-        <option value="$PROJECT_DIR$/pythonparser/dictionnary/Latin_FinlandFemaleUTF8.csv" />
         <option value="$PROJECT_DIR$/pythonparser/dictionnary/Latin_FinlandMaleUTF8.csv" />
         <option value="$PROJECT_DIR$/pythonparser/dictionnary/Latin_FlandersFemaleUTF8.csv" />
         <option value="$PROJECT_DIR$/pythonparser/dictionnary/Latin_FlandersMaleUTF8.csv" />
@@ -424,12 +383,14 @@
         <option value="$PROJECT_DIR$/pythonparser/dictionnary/Latin_BelgiumFemaleUTF8.csv" />
         <option value="$PROJECT_DIR$/pythonparser/namedicts_parser.py" />
         <option value="$PROJECT_DIR$/pythonparser/englishnames/excluderegex" />
-        <option value="$PROJECT_DIR$/data/associative.js" />
-        <option value="$PROJECT_DIR$/pythonparser/englishnames/commonnouns.txt" />
         <option value="$PROJECT_DIR$/nameswap.js" />
         <option value="$PROJECT_DIR$/pythonparser/englishnames/keystoadd.csv" />
-        <option value="$PROJECT_DIR$/style.css" />
+        <option value="$PROJECT_DIR$/pythonparser/englishnames/commonnouns.txt" />
+        <option value="$PROJECT_DIR$/pythonparser/readme.mb" />
+        <option value="$PROJECT_DIR$/pythonparser/export_gendered_dicts.py" />
+        <option value="$PROJECT_DIR$/data/associative.js" />
         <option value="$PROJECT_DIR$/content.js" />
+        <option value="$PROJECT_DIR$/style.css" />
       </list>
     </option>
   </component>
@@ -441,10 +402,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="2011" />
-    <option name="y" value="129" />
+    <option name="x" value="386" />
+    <option name="y" value="89" />
     <option name="width" value="996" />
-    <option name="height" value="875" />
+    <option name="height" value="735" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -470,11 +431,6 @@
               <item name="sheChromeExtension" type="b2602c69:ProjectViewProjectNode" />
               <item name="sheChromeExtension" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="sheChromeExtension" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sheChromeExtension" type="462c0819:PsiDirectoryNode" />
-              <item name="pythonparser" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -488,6 +444,7 @@
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -747,7 +704,7 @@
     <option name="totallyTimeSpent" value="1692000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="386" y="89" width="996" height="735" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -757,8 +714,10 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19838946" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22551021" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -778,7 +737,6 @@
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1522694" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -803,10 +761,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_GermanyFemaleUTF8.csv" />
-    <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_GermanyMaleUTF8.csv" />
-    <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_GreeceFemaleUTF8.csv" />
-    <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_GreeceMaleUTF8.csv" />
     <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_IndiaFemaleUTF8.csv" />
     <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_IndiaMaleUTF8.csv" />
     <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_IranFemaleUTF8.csv" />
@@ -838,33 +792,11 @@
     <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_USAFemaleUTF8.csv" />
     <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_CzechFemaleUTF8.csv" />
     <entry file="file://$PROJECT_DIR$/pythonparser/dictionnary/Latin_ItalyFemaleUTF8.csv" />
-    <entry file="file://$PROJECT_DIR$/pythonparser/namedicts_parser.py" />
-    <entry file="file://$PROJECT_DIR$/pythonparser/export_gendered_dicts.py" />
-    <entry file="file://$PROJECT_DIR$/pythonparser/remove_names.py" />
-    <entry file="file://$PROJECT_DIR$/pythonparser/create_associative_dict.py" />
     <entry file="file://$PROJECT_DIR$/pythonparser/json/final/not_matched.json" />
     <entry file="file://$PROJECT_DIR$/.gitinore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pythonparser/json/final/associative.json" />
-    <entry file="file://$PROJECT_DIR$/data/associative.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="0" column="20327" lean-forward="false" selection-start-line="0" selection-start-column="20327" selection-end-line="0" selection-end-column="20327" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pythonparser/englishnames/excluderegex" />
-    <entry file="file://$PROJECT_DIR$/pythonparser/englishnames/commonnouns.txt" />
-    <entry file="file://$PROJECT_DIR$/pythonparser/englishnames/keystoadd.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="32" column="9" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="49" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -893,18 +825,122 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/style.css">
+    <entry file="file://$PROJECT_DIR$/pythonparser/clean_quebec_names.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="45" column="11" lean-forward="false" selection-start-line="45" selection-start-column="11" selection-end-line="45" selection-end-column="11" />
+        <state relative-caret-position="505">
+          <caret line="31" column="27" lean-forward="false" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pythonparser/json/gender.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pythonparser/add_usa_names.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="14" column="36" lean-forward="true" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pythonparser/englishnames/excluderegex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pythonparser/englishnames/commonnouns.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="4688" column="5" lean-forward="false" selection-start-line="4688" selection-start-column="5" selection-end-line="4688" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pythonparser/englishnames/keystoadd.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="32" column="9" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="48" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pythonparser/export_gendered_dicts.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1340">
+          <caret line="52" column="81" lean-forward="false" selection-start-line="52" selection-start-column="81" selection-end-line="52" selection-end-column="95" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pythonparser/create_associative_dict.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="61" column="14" lean-forward="true" selection-start-line="61" selection-start-column="14" selection-end-line="61" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pythonparser/json/final/associative.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="130387" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/associative.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="130314" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="130406" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pythonparser/readme.mb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="70" lean-forward="false" selection-start-line="10" selection-start-column="70" selection-end-line="10" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pythonparser/remove_names.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="24" column="40" lean-forward="false" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pythonparser/namedicts_parser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="138" column="56" lean-forward="false" selection-start-line="138" selection-start-column="25" selection-end-line="138" selection-end-column="56" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/content.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1071">
-          <caret line="63" column="5" lean-forward="true" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="5" />
+        <state relative-caret-position="178">
+          <caret line="244" column="31" lean-forward="true" selection-start-line="244" selection-start-column="31" selection-end-line="244" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
           <folding />
         </state>
       </provider>
