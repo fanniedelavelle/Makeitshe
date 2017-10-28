@@ -1,0 +1,41 @@
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+
+<head>
+  <title>Make it She</title>
+  <style type="text/css">
+    body {
+      margin: 10px;
+      white-space: nowrap;
+    }
+
+    h1 {
+      font-size: 15px;
+      text-align: center;
+    }
+
+    #share {
+      display: flex;
+      justify-content: center;
+    }
+
+    button {}
+  </style>
+</head>
+
+<body>
+  <div id="stats">
+    <h1><span id="malep"></span>% male presence <p>vs<p> <span id="femalep"></span>% female presence</h1>
+    <div id="tweet-button">
+      <a class="twitter-share-button" href="" >Tweet</a>
+    </div>
+  </div>
+</body>
+<script type='text/javascript' src='popup.js'></script>
+
+</html>
