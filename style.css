@@ -1,10 +1,10 @@
-.replacement {
+.ignore-css{all:unset;}
+.ignore-css.replacement {
     color:red;
     position: relative;
     display: inline-block;
-
 }
-.tooltiptext {
+.ignore-css.tooltiptext {
     visibility: hidden;
     width: 100px;
     background-color: black;
@@ -16,19 +16,19 @@
     z-index: 1;
 }
 
-.replacement:hover .tooltiptext {
+.ignore-css.replacement:hover .tooltiptext {
     visibility: visible; 
     background-color: black;
     text-transform: uppercase;
 }
-#make_it_she_wrap{
+.ignore-css#make_it_she_wrap{
     position: fixed;
     top: 70px;
     right: 30px;
     z-index: 9999999999999999;
 }
 
-#make_it_she_wrap input#make_it_she {
+.ignore-css#make_it_she_wrap input#make_it_she {
   -webkit-border-radius: 28;
   -moz-border-radius: 28;
   border-radius: 28px;
@@ -43,7 +43,7 @@
   cursor: pointer;
 }
 
-#make_it_she_wrap input#make_it_she:hover {
+.ignore-css#make_it_she_wrap input#make_it_she:hover {
   background: #DD0080;
   text-decoration: none;
 }
