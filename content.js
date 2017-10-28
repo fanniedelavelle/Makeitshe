@@ -1,4 +1,5 @@
-var btnsrc = '<div id="make_it_she_wrap"><input type="button" id="make_it_she" value="Make it She"/></div>';
+var btnsrc = '<div id="make_it_she_wrap" class="ignore-css"><input type="button" id="make_it_she" value="Make it She" class="ignore-css"/></div>';
+
 
 document.body.insertAdjacentHTML('beforeEnd', btnsrc);
 
@@ -25,6 +26,7 @@ document.getElementById('make_it_she').addEventListener("click", function(){
     // FEMALE
     var f_ignore_names = [];
     var f_ignore_regex = new RegExp(ignore_names.join("|"), "g");
+
     var f_names_regex = new RegExp(Object.values(names).join(" |") + '(\.|,|;|:)?', "g");
 
 
@@ -35,7 +37,7 @@ document.getElementById('make_it_she').addEventListener("click", function(){
     // FEMALE
     var f_words_regex = new RegExp("\\b" + Object.values(words).join("\\b|\\b"), "gi");
 
-
+    var ignore_scripts = ['SCRIPT', '#comment', 'HEAD', 'CODE', 'LINK', 'META', 'IMG', 'BR'];
 
     // Get all elements from the html
     var elements = document.getElementsByTagName('*');
@@ -58,9 +60,10 @@ document.getElementById('make_it_she').addEventListener("click", function(){
               });
             }
           }
-        };
+        }
       }
-    }
+    };
+
 
     // Replace function
     function replaceAll(str, mapObj, regex) {
@@ -89,7 +92,8 @@ document.getElementById('make_it_she').addEventListener("click", function(){
           } else {
             // Any other type of text, OK to replace and format
             mod = true;
-             return '<span class="replacement">' + replacement + '<span class="tooltiptext">'+ replacement + '</span>' + '</span>';
+             return '<span class="ignore-css replacement">' + replacement + '<span class="ignore-css tooltiptext">'+ matched.trim() + '</span>' + '</span> ';
+
           }
         });
       }
@@ -97,6 +101,7 @@ document.getElementById('make_it_she').addEventListener("click", function(){
         return new_string;
       } else {
         return false;
+
       }
     }
 
@@ -109,18 +114,19 @@ document.getElementById('make_it_she').addEventListener("click", function(){
         // loop inside the tags for child nodes
         for (var j = 0; j < element.childNodes.length; j++) {
           var node = element.childNodes[j];
-           if (node.nodeType === 3) {
-            var text = node.nodeValue;
-            var updated_text = replaceAll(text, mapObj, regex);
-            if (element != null && updated_text != false) {
-              element.innerHTML = element.innerHTML.replace(text, updated_text);
-              // element.innerHTML = updated_text;
-            }
+          if (ignore_scripts.indexOf(node.nodeName) == -1){
+              if (node.nodeType === 3) {
+                var text = node.nodeValue;
+                var updated_text = replaceAll(text, mapObj, regex);
+                if (element != null && updated_text != false) {
+                  element.innerHTML = element.innerHTML.replace(text, updated_text+" ");
+                  // element.innerHTML = updated_text;
+                }
+              }
           }
         }
       }
     };
-
 
     countFemale(f_names_regex);
     countFemale(f_words_regex);
@@ -130,6 +136,7 @@ document.getElementById('make_it_she').addEventListener("click", function(){
     // Calculate percentages
     m_percent = Math.round(m_count / (m_count + f_count) * 100);
     f_percent = Math.round(f_count / (m_count + f_count) * 100);
+
 
     var t1 = performance.now();
     console.log("Finding and replacing all values took " + (t1 - t0) + " milliseconds.");
@@ -160,4 +167,98 @@ document.getElementById('make_it_she').addEventListener("click", function(){
         response(stats);
       }
     });
+
+    // MESSAGING
+    // In order to communicate between the content script and the popup
+
+
+    // Inform the background page that this tab should have a page-action
+    chrome.runtime.sendMessage({
+      from: 'content',
+      subject: 'updateStats'
+    });
+
+
+    // Listen for messages from the popup
+    chrome.runtime.onMessage.addListener(function(msg, sender, response) {
+      // First, validate the message's structure
+      if ((msg.from === 'popup') && (msg.subject === 'stats')) {
+        // Collect the necessary data
+        var stats = {
+          male: m_percent,
+          female: f_percent
+        };
+
+        // Directly respond to the sender (popup),
+        // through the specified callback */
+        response(stats);
+      }
+    });
+
+    if(typeof observer == 'undefined') {
+        // create an observer instance, to update dynamically added content
+        observer = new MutationObserver(function (mutations) {
+            mutations.forEach(function (mutation) {
+                try {
+                    if (mutation.addedNodes.length >= 1) {
+                        var target = mutation.target;
+
+
+                        Object.keys(mutation.addedNodes).map(function (objectKey, index) {
+                            if (ignore_scripts.indexOf(mutation.addedNodes[index].nodeName)) {
+                                if (mutation.addedNodes[index].nodeType == 3) {
+                                    var childText = mutation.addedNodes[index].nodeValue;
+                                    var updated_node_text = replaceAll(element, childText, names, names_regex);
+                                    var element = mutation.addedNodes[index];
+                                    if (updated_node_text != false) {
+                                        updated_node_text_words = replaceAll(element, updated_node_text, words, words_regex);
+                                    } else {
+                                        updated_node_text_words = replaceAll(element, childText, words, words_regex);
+                                    }
+                                    if (updated_node_text_words != false) {
+                                        mutation.addedNodes[index].innerHTML = updated_node_text_words;
+                                    } else if (updated_node_text != false) {
+                                        mutation.addedNodes[index].innerHTML = updated_node_text;
+                                    }
+                                    return;
+                                }
+                                var elements = mutation.addedNodes[index].getElementsByTagName('*');
+                                // loop inside the tags for child nodes
+                                for (var i = 0; i < elements.length; i++) {
+                                    var element = elements[i];
+                                    for (var j = 0; j < element.childNodes.length; j++) {
+                                        var childNode = element.childNodes[j];
+                                        // if the element is text get its value and replace the text with something else.
+                                        if (childNode.nodeType === 3) {
+                                            var childText = childNode.nodeValue;
+                                            var updated_node_text = replaceAll(element, childText, names, names_regex);
+                                            if (updated_node_text != false) {
+                                                updated_node_text_words = replaceAll(element, updated_node_text, words, words_regex);
+                                            } else {
+                                                updated_node_text_words = replaceAll(element, childText, words, words_regex);
+                                            }
+                                            if (updated_node_text_words != false) {
+                                                element.innerHTML = updated_node_text_words;
+                                            } else if (updated_node_text != false) {
+                                                element.innerHTML = updated_node_text;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        });
+                    }
+                } catch (err) {
+                    console.log(err);
+                    return;
+                }
+            });
+        });
+    }
+
+    var targets = document.getElementsByTagName('body')[0];
+    var config = { attributes: false, childList: true, characterData: true, subtree: true, characterDataOldValue:true };
+    // pass in the target node, as well as the observer options
+    observer.observe(targets, config);
 });
+

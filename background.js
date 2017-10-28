@@ -5,3 +5,11 @@ chrome.runtime.onMessage.addListener(function(msg, sender) {
     chrome.pageAction.show(sender.tab.id);
   }
 });
+<<<<<<< HEAD
+=======
+
+chrome.webRequest.onCompleted.addListener(function(e) {
+  console.log('web request');
+});
+
+>>>>>>> nameswap-qa
