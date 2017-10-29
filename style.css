@@ -23,8 +23,8 @@
 }
 #make_it_she_wrap{
     position: fixed;
-    top: 70px;
-    right: 30px;
+    top: 10px;
+    right: 10px;
     z-index: 9999999999999999;
 }
 
