@@ -7,16 +7,18 @@
     "persistent": false,
     "scripts": ["background.js"]
   },
+  "icons": {
+    "120": "icon_off.png"
+  },
   "browser_action": {
-    "default_popup": "popup.html"
+  "default_popup": "popup.html",
+  "default_icon": "icon_off.png"
   },
   "content_scripts": [{
     "matches": ["*://*/*"],
-    "js": ["data/words.js", "data/associative.js", "content.js"],
+    "js": ["data/words.js", "data/associative.js"],
     "css": ["style.css"],
     "run_at": "document_end"
   }],
-  "permissions": [
-    "tabs"
-  ]
+  "permissions": ["activeTab"]
 }
