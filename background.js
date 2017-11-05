@@ -6,6 +6,7 @@ chrome.runtime.onMessage.addListener(function(msg, sender) {
   }
 });
 
-chrome.tabs.onSelectionChanged.addListener(function(){
-	chrome.browserAction.setIcon({path:"icon_off.png"});
+chrome.tabs.onUpdated.addListener(function(){
+   chrome.browserAction.setIcon({path:"icon_off.png"});      
 });
+
