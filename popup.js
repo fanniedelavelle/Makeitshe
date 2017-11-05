@@ -1,3 +1,7 @@
+chrome.tabs.executeScript(null, {file: "content.js"});
+
+chrome.browserAction.setIcon({path:"icon_on.png"});
+
 var malep = document.getElementById("malep");
 var femalep = document.getElementById("femalep");
 

@@ -5,11 +5,7 @@ chrome.runtime.onMessage.addListener(function(msg, sender) {
     chrome.pageAction.show(sender.tab.id);
   }
 });
-<<<<<<< HEAD
-=======
 
-chrome.webRequest.onCompleted.addListener(function(e) {
-  console.log('web request');
+chrome.tabs.onSelectionChanged.addListener(function(){
+	chrome.browserAction.setIcon({path:"icon_off.png"});
 });
-
->>>>>>> nameswap-qa
