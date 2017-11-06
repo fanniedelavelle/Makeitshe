@@ -1,4 +1,58 @@
 var exist = document.getElementById('made_it_she');
+names = window.name_dict;
+
+// Function taken from https://stackoverflow.com/questions/10730309/find-all-text-nodes-in-html-page,
+// to ensure looping only once through each element, hence avoiding infinite loop when inserting original name in span
+var getElementsWithNoChildren = function(el) {
+  var n, a=[], walk=document.createTreeWalker(el,NodeFilter.SHOW_TEXT,null,false);
+  while(n=walk.nextNode()){
+    a.push(n);
+  }
+  return a;
+};
+
+// Replace function
+var replaceAll = function(element, str, mapObj, regex) {
+  var mod = false;
+  new_string = str.replace(regex, function(matched) {
+    m_count++;
+    var original_word = matched.toLowerCase().trim();
+    var replacement = mapObj[matched.trim()];
+    // If it can't find it it's in uppercase:
+    if (replacement == null || replacement == undefined) {
+      // match to lower case word
+      replacement = mapObj[matched.toLowerCase().trim()];
+      // replace with upper case word
+      replacement = replacement.charAt(0).toUpperCase() + replacement.slice(1);
+    }
+
+    if (element.nodeName == "TITLE") {
+      // If male word is in title, don't format it
+      document.title = document.title.replace(matched, replacement + " ");
+      mod = true;
+      return replacement + " ";
+    } else if (element.nodeName == "TEXTAREA") {
+      // If in a text area, such as a tweet, don't replace!
+      mod = true;
+      return matched;
+    } else {
+      // Any other type of text, OK to replace and format
+      mod = true;
+      // this freezes the page:
+      return '<span class="ignore-css replacement">' + replacement + '<span class="ignore-css tooltiptext">'+ matched + '</span>' + '</span> ';
+      // WIP:
+      // return '<span class="ignore-css replacement">' + replacement + '<span class="ignore-css tooltiptext">'+ original_word + '</span></span> ';
+    }
+  });
+
+  if (mod) {
+    // Hacky way of avoiding infinite loop
+    new_string.replace('_?@#', '');
+    return new_string;
+  } else {
+    return false;
+  }
+};
 
 if (exist === null){
   var made_it_she = document.createElement('div');
@@ -16,16 +70,17 @@ if (exist === null){
   var f_count = 0;
 
   // Json with names
-  var names = window.name_dict;
+
+
   // MALE
   var ignore_names = ['San Diego', 'San Francisco', 'New York', 'Hillary Clinton'];
   var ignore_regex = new RegExp(ignore_names.join("|"), "g");
-  var names_regex = new RegExp(Object.keys(names).join(" |") + '(\.|,|;|:| )?', "g");
+  var names_regex = new RegExp(Object.keys(names).join(" |") + '(\.|,|;|:)?', "g");
   // FEMALE
   var f_ignore_names = [];
   var f_ignore_regex = new RegExp(ignore_names.join("|"), "g");
   var f_names_regex = new RegExp(Object.values(names).join(" |") + '(\.|,|;|:)?', "g");
-  var ignore_scripts = ['SCRIPT', '#comment', 'HEAD', 'CODE', 'LINK', 'META', 'IMG', 'BR'];
+  var ignore_scripts = ['SCRIPT', '#comment', 'BODY', 'HEAD', 'CODE', 'LINK', 'META', 'IMG', 'BR'];
 
 
   // Json with words
@@ -38,93 +93,40 @@ if (exist === null){
 
 
   // Get all elements from the html
-  var elements = document.getElementsByTagName('*');
+  var elements = getElementsWithNoChildren(document.body);
+  console.log(elements.length);
+  console.log(elements);
 
   // Count all female words
   var countFemale = function(regex) {
     // loop through the html tags
     for (var i = 0; i < elements.length; i++) {
-    var element = elements[i];
-    // loop inside the tags for child nodes
-      for (var j = 0; j < element.childNodes.length; j++) {
-        var node = element.childNodes[j];
-        // if the element is text get its value and replace the text with something else.
-        if (node.nodeType === 3) {
-          var text = node.nodeValue;
-          if (!ignore_regex.test(text)) {
-            new_string = text.replace(regex, function(matched) {
+      var element = elements[i];
+      if (element.nodeType === 3) {
+        var text = element.nodeValue;
+        if (!ignore_regex.test(text) && ignore_scripts.indexOf(element.nodeName) == -1) {
+          new_string = text.replace(regex, function(matched) {
             // Just count! don't replace
             f_count++;
-            });
-          }
+          });
         }
-      };
+      }
     }
   };
 
-  // Replace function
-  function replaceAll(str, mapObj, regex) {
-    var mod = false;
-    if(ignore_scripts.indexOf(element.nodeName) == -1){
-      if (!ignore_regex.test(str)) {
-        new_string = str.replace(regex, function(matched) {
-          m_count++;
-          var original_word = matched.toLowerCase().trim();
-          var replacement = mapObj[matched.trim()];
-          // If it can't find it it's in uppercase:
-          if (replacement == null || replacement == undefined) {
-            // match to lower case word
-            replacement = mapObj[matched.toLowerCase().trim()];
-            // replace with upper case word
-            replacement = replacement.charAt(0).toUpperCase() + replacement.slice(1);
-          }
-
-          if (element.nodeName == "TITLE") {
-            // If male word is in title, don't format it
-            document.title = document.title.replace(matched, replacement + " ");
-            mod = true;
-            return replacement + " ";
-          } else if (element.nodeName == "TEXTAREA") {
-            // If in a text area, such as a tweet, don't replace!
-            mod = true;
-            return matched;
-          } else {
-            // Any other type of text, OK to replace and format
-            mod = true;
-            // this freezes the page:
-            return '<span class="ignore-css replacement">' + replacement + '<span class="ignore-css tooltiptext">'+ replacement + '</span>' + '</span> ';
-            // WIP:
-            // return '<span class="ignore-css replacement">' + replacement + '<span class="ignore-css tooltiptext">'+ original_word + '</span></span> ';
-          }
-        });
-      }
-    }
-
-    if (mod) {
-      return new_string;
-    } else {
-      return false;
-    }
-  }
-
-  var element;
   // Find function
   var findAll = function(mapObj, regex) {
     // loop through the html tags
     for (var i = 0; i < elements.length; i++) {
-    element = elements[i];
-    // loop inside the tags for child nodes
-    for (var j = 0; j < element.childNodes.length; j++) {
-      var node = element.childNodes[j];
-       if (node.nodeType === 3) {
-      var text = node.nodeValue;
-      var updated_text = replaceAll(text, mapObj, regex);
-      if (element != null && updated_text != false) {
-        element.innerHTML = element.innerHTML.replace(text, updated_text);
-        // element.innerHTML = updated_text;
+      var element = elements[i];
+      // loop inside the tags for child nodes
+       if (element.nodeType === 3 && ignore_scripts.indexOf(element.nodeName) == -1) {
+          var text = element.nodeValue;
+          var updated_text = replaceAll(element, text, mapObj, regex);
+          if (element.parentNode != null && updated_text != false) {
+            element.parentNode.innerHTML = element.textContent.replace(text, updated_text)
+          }
       }
-      }
-    }
     }
   };
 
