@@ -16,7 +16,7 @@
   },
   "content_scripts": [{
     "matches": ["*://*/*"],
-    "js": ["data/words.js", "data/associative.js"],
+    "js": ["data/words.js"],
     "css": ["style.css"],
     "run_at": "document_end"
   }],

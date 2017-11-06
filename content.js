@@ -13,6 +13,10 @@ var getElementsWithNoChildren = function(el) {
 
 // Replace function
 var replaceAll = function(element, str, mapObj, regex) {
+
+  if(element.childNodes.length > 0){
+    console.log(element.childNodes);
+  }
   var mod = false;
   new_string = str.replace(regex, function(matched) {
     m_count++;
@@ -100,6 +104,7 @@ if (exist === null){
     // loop through the html tags
     for (var i = 0; i < elements.length; i++) {
       var element = elements[i];
+      console.log(element);
       if (element.nodeType === 3) {
         var text = element.nodeValue;
         if (!ignore_regex.test(text) && ignore_scripts.indexOf(element.nodeName) == -1) {
@@ -122,7 +127,7 @@ if (exist === null){
           var text = element.nodeValue;
           var updated_text = replaceAll(element, text, mapObj, regex);
           if (element.parentNode != null && updated_text != false) {
-            element.parentNode.innerHTML = element.textContent.replace(text, updated_text)
+            element.parentNode.innerHTML = element.parentNode.textContent.replace(text, updated_text)
           }
       }
     }

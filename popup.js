@@ -1,3 +1,4 @@
+chrome.tabs.executeScript(null, {file: "data/associative.js"});
 chrome.tabs.executeScript(null, {file: "content.js"});
 
 chrome.browserAction.setIcon({path:"icon_on.png"});

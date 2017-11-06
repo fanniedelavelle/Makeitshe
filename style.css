@@ -14,7 +14,7 @@
     padding: 10px;
     border-radius: 6px;
     position: absolute;
-    position: -webkit-sticky; 
+    position: -webkit-sticky;
     z-index: 999;
     text-wrap: avoid;
 }
