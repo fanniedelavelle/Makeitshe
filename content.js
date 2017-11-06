@@ -47,7 +47,7 @@ var replaceAll = function(element, str, mapObj, regex) {
 
   if (mod) {
     // Hacky way of avoiding infinite loop
-    new_string.replace('_?@#', '');
+
     return new_string;
   } else {
     return false;
@@ -94,8 +94,6 @@ if (exist === null){
 
   // Get all elements from the html
   var elements = getElementsWithNoChildren(document.body);
-  console.log(elements.length);
-  console.log(elements);
 
   // Count all female words
   var countFemale = function(regex) {
