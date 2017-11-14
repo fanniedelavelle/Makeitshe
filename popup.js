@@ -1,24 +1,13 @@
 chrome.tabs.executeScript(null, {file: "data/associative.js"});
 chrome.tabs.executeScript(null, {file: "content.js"});
 
-chrome.runtime.onMessage.addListener(function(msg, sender, response) {
-    if((msg.from === 'content') && (msg.subject === 'setIconOn')){
-    chrome.browserAction.setIcon({path:"icon_on.png"});
-    document.getElementById("stats").style.display = "block";
-    }
-  
-  if((msg.from === 'content') && (msg.subject === 'setIconOff')){
-    chrome.browserAction.setIcon({path:"icon_off.png"});
-    document.getElementById("off").style.display = "block";
-    }
-});
+chrome.browserAction.setIcon({path:"icon_on.png"});
 
 var malep = document.getElementById("malep");
 var femalep = document.getElementById("femalep");
 
 // Stats hidden at start
 document.getElementById("stats").style.display = "none";
-document.getElementById("off").style.display = "none";
 
 
 // Update the relevant fields with the new data
@@ -77,6 +66,7 @@ function setTweet(m, f) {
     // Set the tweet text and parameters
     console.log(activeTab.url);
     tweetUrl = "https://twitter.com/intent/tweet?text=" + encodeURIComponent(tweetText) + "&url=" + activeTab.url + "&via=makeitshe";
+    document.getElementById("stats").style.display = "block";
     tweetB.style.color = "red";
   });
 }

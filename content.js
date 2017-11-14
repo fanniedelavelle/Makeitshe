@@ -1,6 +1,4 @@
 var exist = document.getElementById('made_it_she');
-
-if (exist === null){
 names = window.name_dict;
 
 // Function taken from https://stackoverflow.com/questions/10730309/find-all-text-nodes-in-html-page,
@@ -17,7 +15,7 @@ var getElementsWithNoChildren = function(el) {
 var replaceAll = function(element, str, mapObj, regex) {
 
   if(element.childNodes.length > 0){
-    //console.log(element.childNodes);
+    console.log(element.childNodes);
   }
   var mod = false;
   new_string = str.replace(regex, function(matched) {
@@ -60,7 +58,7 @@ var replaceAll = function(element, str, mapObj, regex) {
   }
 };
 
-
+if (exist === null){
   var made_it_she = document.createElement('div');
   made_it_she.setAttribute('id', 'made_it_she');
   document.body.appendChild(made_it_she);
@@ -106,7 +104,7 @@ var replaceAll = function(element, str, mapObj, regex) {
     // loop through the html tags
     for (var i = 0; i < elements.length; i++) {
       var element = elements[i];
-      //console.log(element);
+      console.log(element);
       if (element.nodeType === 3) {
         var text = element.nodeValue;
         if (!ignore_regex.test(text) && ignore_scripts.indexOf(element.nodeName) == -1) {
@@ -157,11 +155,6 @@ var replaceAll = function(element, str, mapObj, regex) {
     from: 'content',
     subject: 'updateStats'
   });
-  
-  chrome.runtime.sendMessage({
-    from: 'content',
-    subject: 'setIconOn'
-  });
 
   // Listen for messages from the popup
   chrome.runtime.onMessage.addListener(function(msg, sender, response) {
@@ -179,20 +172,4 @@ var replaceAll = function(element, str, mapObj, regex) {
     }
   });
 
-}else{
-  var texts = document.querySelectorAll("span.ignore-css.replacement");
-
-  for(var i = 0; i < texts.length; i++){
-    var original_text = texts[i].querySelector('span').innerHTML;
-    
-    texts[i].insertAdjacentHTML('afterEnd', original_text);
-    texts[i].parentNode.removeChild(texts[i]);
-  }
-  
-  document.getElementById('made_it_she').parentNode.removeChild(document.getElementById('made_it_she'));
-  
-  chrome.runtime.sendMessage({
-    from: 'content',
-    subject: 'setIconOff'
-  });
 }
