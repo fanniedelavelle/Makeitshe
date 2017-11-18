@@ -37,7 +37,15 @@ var replaceAll = function(element, str, mapObj, regex) {
       // match to lower case word
       replacement = mapObj[original_word];
       // replace with upper case word
-      replacement = replacement.charAt(0).toUpperCase() + replacement.slice(1);
+      if (replacement == null || replacement == undefined){
+
+        replacement = mapObj[matched];
+        if (replacement == null ){
+          return false;
+        }
+      } else {
+        replacement = replacement.charAt(0).toUpperCase() + replacement.slice(1);
+      }
     }
 
 
