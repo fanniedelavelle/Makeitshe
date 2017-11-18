@@ -3,55 +3,55 @@ names = window.name_dict;
 
 // Function taken from https://stackoverflow.com/questions/10730309/find-all-text-nodes-in-html-page,
 // to ensure looping only once through each element, hence avoiding infinite loop when inserting original name in span
-var getElementsWithNoChildren = function(el) {
-  var n, a=[], walk=document.createTreeWalker(el,NodeFilter.SHOW_TEXT,null,false);
+var getElementsWithNoChildren = function(el, ignore_scripts) {
+  var n, a=[], walk=document.createTreeWalker(el,NodeFilter.SHOW_ELEMENT,{ acceptNode: function(node) {
+
+    if(ignore_scripts.indexOf(node.nodeName) == -1){
+      return NodeFilter.FILTER_ACCEPT;
+    } else {
+      return NodeFilter.FILTER_SKIP;
+    }
+
+  } },false);
   while(n=walk.nextNode()){
-    a.push(n);
+    for (var i = 0; i < n.childNodes.length; i++){
+      console.log(n.childNodes[i]);
+      if(typeof(n.childNodes[i]) != 'undefined'&& n.childNodes[i].nodeType == 3){
+        a.push(n.childNodes[i]);
+      }
+    }
   }
   return a;
 };
 
 // Replace function
 var replaceAll = function(element, str, mapObj, regex) {
-
-  if(element.childNodes.length > 0){
-    console.log(element.childNodes);
-  }
   var mod = false;
   new_string = str.replace(regex, function(matched) {
     m_count++;
     var original_word = matched.toLowerCase().trim();
     var replacement = mapObj[matched.trim()];
+
     // If it can't find it it's in uppercase:
     if (replacement == null || replacement == undefined) {
       // match to lower case word
-      replacement = mapObj[matched.toLowerCase().trim()];
+      replacement = mapObj[original_word];
       // replace with upper case word
       replacement = replacement.charAt(0).toUpperCase() + replacement.slice(1);
     }
 
-    if (element.nodeName == "TITLE") {
-      // If male word is in title, don't format it
-      document.title = document.title.replace(matched, replacement + " ");
-      mod = true;
-      return replacement + " ";
-    } else if (element.nodeName == "TEXTAREA") {
-      // If in a text area, such as a tweet, don't replace!
-      mod = true;
-      return matched;
-    } else {
+
       // Any other type of text, OK to replace and format
       mod = true;
       // this freezes the page:
       return '<span class="ignore-css replacement">' + replacement + '<span class="ignore-css tooltiptext">'+ matched + '</span>' + '</span> ';
       // WIP:
       // return '<span class="ignore-css replacement">' + replacement + '<span class="ignore-css tooltiptext">'+ original_word + '</span></span> ';
-    }
+
   });
 
   if (mod) {
     // Hacky way of avoiding infinite loop
-
     return new_string;
   } else {
     return false;
@@ -79,32 +79,31 @@ if (exist === null){
   // MALE
   var ignore_names = ['San Diego', 'San Francisco', 'New York', 'Hillary Clinton'];
   var ignore_regex = new RegExp(ignore_names.join("|"), "g");
-  var names_regex = new RegExp(Object.keys(names).join(" |") + '(\.|,|;|:)?', "g");
+  var names_regex = new RegExp(Object.keys(names).join(' |') + '( |\.|,|;|:)?', "g");
   // FEMALE
   var f_ignore_names = [];
   var f_ignore_regex = new RegExp(ignore_names.join("|"), "g");
   var f_names_regex = new RegExp(Object.values(names).join(" |") + '(\.|,|;|:)?', "g");
-  var ignore_scripts = ['SCRIPT', '#comment', 'BODY', 'HEAD', 'CODE', 'LINK', 'META', 'IMG', 'BR'];
+  var ignore_scripts = ['SCRIPT', '#comment', 'BODY', 'HEAD', 'CODE', 'LINK', 'META', 'IMG', 'BR', 'clipPath', 'polygon', 'svg'];
 
 
   // Json with words
   var words = window.word_dict;
   // MALE
-  var words_regex = new RegExp("\\b" + Object.keys(words).join("\\b|\\b"), "gi");
+  var words_regex = new RegExp("\\b" + Object.keys(words).join(" \\b|\\b"), "gi");
   // FEMALE
-  var f_words_regex = new RegExp("\\b" + Object.values(words).join("\\b|\\b"), "gi");
+  var f_words_regex = new RegExp("\\b" + Object.values(words).join(" \\b|\\b"), "gi");
 
 
 
   // Get all elements from the html
-  var elements = getElementsWithNoChildren(document.body);
+  var elements = getElementsWithNoChildren(document.body, ignore_scripts);
 
   // Count all female words
-  var countFemale = function(regex) {
-    // loop through the html tags
+  var countFemale = function(regex, elements) {
+    // loop through the elements parameter
     for (var i = 0; i < elements.length; i++) {
       var element = elements[i];
-      console.log(element);
       if (element.nodeType === 3) {
         var text = element.nodeValue;
         if (!ignore_regex.test(text) && ignore_scripts.indexOf(element.nodeName) == -1) {
@@ -118,26 +117,34 @@ if (exist === null){
   };
 
   // Find function
-  var findAll = function(mapObj, regex) {
+  var findAll = function(mapObj, regex, elements) {
     // loop through the html tags
     for (var i = 0; i < elements.length; i++) {
       var element = elements[i];
       // loop inside the tags for child nodes
-       if (element.nodeType === 3 && ignore_scripts.indexOf(element.nodeName) == -1) {
-          var text = element.nodeValue;
-          var updated_text = replaceAll(element, text, mapObj, regex);
-          if (element.parentNode != null && updated_text != false) {
-            element.parentNode.innerHTML = element.parentNode.textContent.replace(text, updated_text)
-          }
-      }
+
+        var text = element.nodeValue;
+        var updated_text = replaceAll(element, text, mapObj, regex);
+         if(element.parentNode != null && updated_text != false){
+           console.log(element.parentNode);
+           // element.nodeValue = updated_text;
+           var replacementNode = document.createElement('span');
+           replacementNode.innerHTML = updated_text;
+           element.parentNode.insertBefore(replacementNode, element);
+           element.parentNode.removeChild(element);
+         }
     }
   };
 
 
-  countFemale(f_names_regex);
-  countFemale(f_words_regex);
-  findAll(names, names_regex);
-  findAll(words, words_regex);
+  countFemale(f_names_regex, elements);
+  countFemale(f_words_regex, elements);
+
+  // Switch words first
+  findAll(words, words_regex, elements);
+  // Then switch names
+  findAll(names, names_regex, elements);
+
 
   // Calculate percentages
   m_percent = Math.round(m_count / (m_count + f_count) * 100);

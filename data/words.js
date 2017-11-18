@@ -2,6 +2,7 @@ window.word_dict = {
   "mr":"ms",
   "he": "she",
   "his": "her",
+  "him": "her",
   "man": "woman",
   "men": "women",
   "father": "mother",
