@@ -33,5 +33,6 @@ window.word_dict = {
   "prince":"princess",
   "emperor":"empress",
   "czar":"czarina",
-  "fathers":"mothers"
+  "fathers":"mothers",
+  "grandfather":"grandmother"
 }
