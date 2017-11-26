@@ -28,6 +28,7 @@ window.word_dict = {
   "son":"daughter",
   "dad":"mom",
   "he's":"she's",
+  "he’s":"she’s",
   "baron":"baroness",
   "prince":"princess",
   "emperor":"empress",
