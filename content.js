@@ -98,9 +98,9 @@ if (exist === null){
   // Json with words
   var words = window.word_dict;
   // MALE
-  var words_regex = new RegExp("\\b" + Object.keys(words).join(" \\b|\\b"), "gi");
+  var words_regex = new RegExp("\\b" + Object.keys(words).join("\040\\b|\\b"), "gi");
   // FEMALE
-  var f_words_regex = new RegExp("\\b" + Object.values(words).join(" \\b|\\b"), "gi");
+  var f_words_regex = new RegExp("\\b" + Object.values(words).join("\040\\b|\\b"), "gi");
 
 
 
