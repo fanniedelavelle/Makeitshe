@@ -15,7 +15,6 @@ var getElementsWithNoChildren = function(el, ignore_scripts) {
   } },false);
   while(n=walk.nextNode()){
     for (var i = 0; i < n.childNodes.length; i++){
-      console.log(n.childNodes[i]);
       if(typeof(n.childNodes[i]) != 'undefined'&& n.childNodes[i].nodeType == 3){
         a.push(n.childNodes[i]);
       }
@@ -88,12 +87,13 @@ if (exist === null) {
   var ignore_regex = new RegExp(ignore_names.join("|"), "g");
   //var names_regex = new RegExp(Object.keys(names).join("|") + '(\.|,|;|:)?', "g");
   var names_regex = new RegExp("\\b" + Object.keys(names).join("\\b|\\b"), "gi");
-  console.log(names_regex);
+
   // FEMALE
   var f_ignore_names = [];
   var f_ignore_regex = new RegExp(ignore_names.join("|"), "g");
   // var f_names_regex = new RegExp(Object.values(names).join("|") + '(\.|,|;|:)?', "g");
-  var f_names_regex = new RegExp("\\b" + Object.keys(names).join("\\b|\\b"), "gi");
+  var f_names_regex = new RegExp("\\b" + Object.values(names).join("\\b|\\b"), "gi");
+
   var ignore_scripts = ['SCRIPT', '#comment', 'BODY', 'HEAD', 'CODE', 'LINK', 'META', 'IMG', 'BR', 'clipPath', 'polygon', 'svg'];
 
 
@@ -101,6 +101,7 @@ if (exist === null) {
   var words = window.word_dict;
   // MALE
   var words_regex = new RegExp("\\b" + Object.keys(words).join("\\b|\\b"), "gi");
+
   // FEMALE
   var f_words_regex = new RegExp("\\b" + Object.values(words).join("\\b|\\b"), "gi");
 
