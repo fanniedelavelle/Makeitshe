@@ -22,7 +22,7 @@
 .ignore-css.replacement:hover .tooltiptext {
     visibility: visible;
     background-color: black;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
 }
 .ignore-css#make_it_she_wrap{
     position: fixed;
