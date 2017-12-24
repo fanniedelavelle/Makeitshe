@@ -195,7 +195,7 @@ if (exist === null) {
           search_capitals = text.match(capitals_regex);
           // If found capital words, search for names
           if (search_capitals != null) {
-            new_string = text.replace(regex, function(matched) {
+            new_string = text.match(regex, function(matched) {
               // Just count! don't replace
               f_count++;
             });
