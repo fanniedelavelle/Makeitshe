@@ -247,8 +247,8 @@ if (exist === null) {
     }
   };
 
-  countFemaleWords(f_names_regex, elements);
-  countFemaleNames(f_words_regex, elements);
+  countFemaleWords(f_words_regex, elements);
+  countFemaleNames(f_names_regex, elements);
   // Switch words first
   findAllWords(words, words_regex, elements);
   // Update elements
