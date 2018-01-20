@@ -24,5 +24,15 @@ window.word_dict = {
   "policeman":"policewoman",
   "husband":"wife",
   "son":"daughter",
-  "dad":"mom"
+  "dad":"mom",
+  "fathers":"mothers",
+  "dads":"moms",
+  "czar":"czarina",
+  "tsar":"tsarina",
+  "congressmen":"congresswomen",
+  "emperor":"empress",
+  "prince":"princess",
+  "lord":"lady",
+  "baron":"baroness",
+  "Orlando":"Orlanda",
 }
