@@ -259,7 +259,7 @@ window.name_dict = {
   "Jaquon": "Joaquina",
   "Kolin": "Karoline",
   "Eulalio": "Eulalia",
-  "William": "Willia",
+  "William": "Willa",
   "Davorin": "Dorine",
   "Jorne": "Joane",
   "Alejandro": "Alejandra",
