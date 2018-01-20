@@ -1555,7 +1555,7 @@ window.name_dict = {
   "Eldred": "Mildred",
   "Antonin": "Antonina",
   "Belarmino": "Bernardine",
-  "Sean": "Sueann",
+  "Sean": "Shanna",
   "Tadej": "Tanja",
   "Jeremih": "Jeri",
   "Clint": "Céline",
