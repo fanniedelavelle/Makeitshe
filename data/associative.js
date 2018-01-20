@@ -4777,7 +4777,7 @@ window.name_dict = {
   "Kevon": "Devona",
   "Eugeen": "Eugenie",
   "Tyrik": "Tyra",
-  "Wilbur": "Silambu",
+  "Wilbur": "Winona",
   "Danil": "Daniela",
   "Vaughn": "Meaghan",
   "Greysen": "Krysten",
