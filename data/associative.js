@@ -515,7 +515,7 @@ window.name_dict = {
   "Parth": "Marthe",
   "Tamer": "Tamera",
   "Badr": "Zandra",
-  "John": "Johnna",
+  "John": "Joanna",
   "Daequan": "Shaquana",
   "Glenn": "Glenna",
   "Bruce": "Bernice",
