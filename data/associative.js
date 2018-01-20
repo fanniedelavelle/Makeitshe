@@ -5437,7 +5437,7 @@ window.name_dict = {
   "Timur": "Turid",
   "Adem": "Aide",
   "Raynard": "Rayna",
-  "Barack": "Emma",
+  "Barack": "Tasya",
   "Waqar": "Wanda",
   "Chayce": "Chae",
   "Vikas": "Viva",
