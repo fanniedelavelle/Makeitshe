@@ -1712,7 +1712,7 @@ window.name_dict = {
   "Ammar": "Amparo",
   "Jean-francois": "Francoise",
   "Braylon": "Carylon",
-  "Harold": "Holda",
+  "Harold": "Farrah",
   "Narendra": "Nedra",
   "Abdelhamid": "Adelaide",
   "Vegard": "Verda",
