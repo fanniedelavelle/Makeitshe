@@ -1,5 +1,6 @@
 window.name_dict = {
   "Mr":"Ms",
+  "Daniel":"Daniela",
   "Carles": "Carla",
   "Nikolaus": "Nicolasa",
   "Stephen": "Stephanie",
