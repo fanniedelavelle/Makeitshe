@@ -3514,7 +3514,7 @@ window.name_dict = {
   "Jamere": "Jamee",
   "Juvenal": "Jena",
   "Rashad": "Rashida",
-  "Timothy": "Dorthy",
+  "Timothy": "Dorothy",
   "Tom": "Tommie",
   "Bartosz": "Natosha",
   "Arun": "Bruna",
