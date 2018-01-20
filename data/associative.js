@@ -2,6 +2,7 @@ window.name_dict = {
   "Mr":"Ms",
   "Carles": "Carla",
   "Nikolaus": "Nicolasa",
+  "Stephen": "Stephanie",
   "Zeth": "Beth",
   "Janek": "Jane",
   "Petrus": "Petra",
