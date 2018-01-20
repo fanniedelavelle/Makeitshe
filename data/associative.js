@@ -2716,6 +2716,7 @@ window.name_dict = {
   "Khari": "Shari",
   "Rogerio": "Rosio",
   "Raul": "Raquel",
+  "Raúl": "Raquel",
   "Cristof": "Cristy",
   "Johathan": "Johana",
   "Nuri": "Nuria",
