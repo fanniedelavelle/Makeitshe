@@ -3979,7 +3979,7 @@ window.name_dict = {
   "Luis miguel": "Luise",
   "Donogh": "Dorothy",
   "Domanic": "Dominica",
-  "Adam": "Alda",
+  "Adam": "Andrea",
   "Brayden": "Brande",
   "Abdul-rahman": "Obdulia",
   "Walt": "Waltraud",
