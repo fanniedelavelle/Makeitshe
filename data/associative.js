@@ -6080,7 +6080,7 @@ window.name_dict = {
   "Omar": "Tamar",
   "Ottis": "Ettie",
   "Nenad": "Nena",
-  "Walter": "Waltraud",
+  "Walter": "Waltina",
   "Siebe": "Shireen",
   "Badi": "Brandi",
   "Jean pierre": "Jeanie",
